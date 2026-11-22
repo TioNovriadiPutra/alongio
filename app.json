@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "alongio-v1",
+    "slug": "alongio-v1",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.tio_novriadi.alongiov1"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#F8F1E5",
+          "image": "./src/assets/splash-screen.png",
+          "imageWidth": 390,
+          "resizeMode": "contain"
+        }
+      ]
+    ]
+  }
+}

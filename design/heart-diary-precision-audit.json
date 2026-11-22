@@ -1,0 +1,305 @@
+{
+  "screen_frames": 36,
+  "screen_dimensions": [
+    390,
+    844
+  ],
+  "individual_preview_dimensions": [
+    780,
+    1688
+  ],
+  "locked_heart_diary_frames": 36,
+  "protected_exports_unchanged": 75,
+  "protected_layers_matched": 6767,
+  "reopened_pngs_matching": 111,
+  "prototype_connections_verified_after_reopen": 213,
+  "audit": {
+    "A1": {
+      "inspected": 969,
+      "found": 26,
+      "corrected": 26,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": [
+        {
+          "id": 8038,
+          "layer": "Date stamp",
+          "screen": "01-personal",
+          "finding": "Non-token native spacing [0.0, 6.0]"
+        },
+        {
+          "id": 8048,
+          "layer": "Date stamp",
+          "screen": "01-personal",
+          "finding": "Non-token native spacing [0.0, 6.0]"
+        },
+        {
+          "id": 8150,
+          "layer": "Date stamp",
+          "screen": "02-shared",
+          "finding": "Non-token native spacing [0.0, 6.0]"
+        },
+        {
+          "id": 8165,
+          "layer": "Date stamp",
+          "screen": "02-shared",
+          "finding": "Non-token native spacing [0.0, 6.0]"
+        }
+      ]
+    },
+    "A2": {
+      "inspected": 272,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A3": {
+      "inspected": 124,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A4": {
+      "inspected": 724,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A5": {
+      "inspected": 169,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A6": {
+      "inspected": 143,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A7": {
+      "inspected": 50,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A8": {
+      "inspected": 6406,
+      "found": 2,
+      "corrected": 2,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": [
+        {
+          "screen": "13-attached",
+          "layer": "Remove photo",
+          "finding": "Sheet action crowds bottom gesture area"
+        },
+        {
+          "screen": "13-attached",
+          "layer": "Done",
+          "finding": "Sheet action crowds bottom gesture area"
+        }
+      ]
+    },
+    "A9": {
+      "inspected": 129,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A10": {
+      "inspected": 3339,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    }
+  },
+  "scope": "All Heart Diary screens, interaction-state examples and module component masters",
+  "counts_note": "Each inspected count is the number of measurements for that criterion and may include multiple checks on the same layer. Initial findings are from the first fully assembled FigCraft pass. Final measurements are from the corrected design.",
+  "visual_review": {
+    "reviewed_previews": 36,
+    "date_stamp": "Centered the two-line date stamp and removed off-scale padding from both reusable variants.",
+    "visibility": "Made visibility icons neutral so each label stays meaningful when selection changes.",
+    "copy_and_states": "Moved validation below stable form controls, used distinct pending-invitation art, and differentiated shared/personal success and deletion examples.",
+    "authorship": "Added a partner-authored read-only example and kept edit/delete actions on the author’s entry.",
+    "attachment": "Preserved the attachment indicator and moved both photo-sheet actions clear of the bottom gesture area."
+  },
+  "inspection_limitations": [
+    "Icon centering is measured using geometric layout bounds. Optical balance and intentional overlaps were reviewed visually.",
+    "Checks apply to the 390×844 design and available text examples. System camera, photo picker, connection services and runtime behavior are outside the design prototype.",
+    "The mood sheets show all five choices and an example Soft path. Attached photos are represented by editable vector artwork."
+  ],
+  "screens": {
+    "01-personal": {
+      "figcraft_id": 10732,
+      "preview": "screens/04-heart-diary/01-personal.png"
+    },
+    "02-shared": {
+      "figcraft_id": 10830,
+      "preview": "screens/04-heart-diary/02-shared.png"
+    },
+    "03-private-history": {
+      "figcraft_id": 10952,
+      "preview": "screens/04-heart-diary/03-private-history.png"
+    },
+    "04-shared-history": {
+      "figcraft_id": 11018,
+      "preview": "screens/04-heart-diary/04-shared-history.png"
+    },
+    "05-new": {
+      "figcraft_id": 11105,
+      "preview": "screens/04-heart-diary/05-new.png"
+    },
+    "06-draft": {
+      "figcraft_id": 11160,
+      "preview": "screens/04-heart-diary/06-draft.png"
+    },
+    "07-shared-draft": {
+      "figcraft_id": 11215,
+      "preview": "screens/04-heart-diary/07-shared-draft.png"
+    },
+    "08-edit-private": {
+      "figcraft_id": 11325,
+      "preview": "screens/04-heart-diary/08-edit-private.png"
+    },
+    "09-edit-shared": {
+      "figcraft_id": 11380,
+      "preview": "screens/04-heart-diary/09-edit-shared.png"
+    },
+    "10-daily-mood": {
+      "figcraft_id": 11575,
+      "preview": "screens/04-heart-diary/10-daily-mood.png"
+    },
+    "11-entry-mood": {
+      "figcraft_id": 11728,
+      "preview": "screens/04-heart-diary/11-entry-mood.png"
+    },
+    "12-attach": {
+      "figcraft_id": 11955,
+      "preview": "screens/04-heart-diary/12-attach.png"
+    },
+    "13-attached": {
+      "figcraft_id": 12039,
+      "preview": "screens/04-heart-diary/13-attached.png"
+    },
+    "14-visibility": {
+      "figcraft_id": 12127,
+      "preview": "screens/04-heart-diary/14-visibility.png"
+    },
+    "15-share-selected": {
+      "figcraft_id": 12218,
+      "preview": "screens/04-heart-diary/15-share-selected.png"
+    },
+    "16-validation": {
+      "figcraft_id": 11435,
+      "preview": "screens/04-heart-diary/16-validation.png"
+    },
+    "17-discard": {
+      "figcraft_id": 11495,
+      "preview": "screens/04-heart-diary/17-discard.png"
+    },
+    "18-private-detail": {
+      "figcraft_id": 12310,
+      "preview": "screens/04-heart-diary/18-private-detail.png"
+    },
+    "19-shared-detail": {
+      "figcraft_id": 12351,
+      "preview": "screens/04-heart-diary/19-shared-detail.png"
+    },
+    "20-photo": {
+      "figcraft_id": 12405,
+      "preview": "screens/04-heart-diary/20-photo.png"
+    },
+    "21-delete": {
+      "figcraft_id": 12479,
+      "preview": "screens/04-heart-diary/21-delete.png"
+    },
+    "22-empty": {
+      "figcraft_id": 12623,
+      "preview": "screens/04-heart-diary/22-empty.png"
+    },
+    "23-loading": {
+      "figcraft_id": 12697,
+      "preview": "screens/04-heart-diary/23-loading.png"
+    },
+    "24-error": {
+      "figcraft_id": 12773,
+      "preview": "screens/04-heart-diary/24-error.png"
+    },
+    "25-created": {
+      "figcraft_id": 12847,
+      "preview": "screens/04-heart-diary/25-created.png"
+    },
+    "26-updated": {
+      "figcraft_id": 12964,
+      "preview": "screens/04-heart-diary/26-updated.png"
+    },
+    "27-connect": {
+      "figcraft_id": 13596,
+      "preview": "screens/04-heart-diary/27-connect.png"
+    },
+    "28-pending": {
+      "figcraft_id": 13693,
+      "preview": "screens/04-heart-diary/28-pending.png"
+    },
+    "29-daily-mood-saved": {
+      "figcraft_id": 11838,
+      "preview": "screens/04-heart-diary/29-daily-mood-saved.png"
+    },
+    "30-deleted": {
+      "figcraft_id": 13363,
+      "preview": "screens/04-heart-diary/30-deleted.png"
+    },
+    "31-delete-private": {
+      "figcraft_id": 12557,
+      "preview": "screens/04-heart-diary/31-delete-private.png"
+    },
+    "32-deleted-private": {
+      "figcraft_id": 13489,
+      "preview": "screens/04-heart-diary/32-deleted-private.png"
+    },
+    "33-photo-draft": {
+      "figcraft_id": 11270,
+      "preview": "screens/04-heart-diary/33-photo-draft.png"
+    },
+    "34-created-shared": {
+      "figcraft_id": 13105,
+      "preview": "screens/04-heart-diary/34-created-shared.png"
+    },
+    "35-updated-private": {
+      "figcraft_id": 13246,
+      "preview": "screens/04-heart-diary/35-updated-private.png"
+    },
+    "36-partner-detail": {
+      "figcraft_id": 12438,
+      "preview": "screens/04-heart-diary/36-partner-detail.png"
+    }
+  }
+}

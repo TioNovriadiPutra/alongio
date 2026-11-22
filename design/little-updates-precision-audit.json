@@ -1,0 +1,463 @@
+{
+  "scope": "Little Updates inbox, notification types, state examples, and editable component masters",
+  "approved_baseline": {
+    "screens": {
+      "Home": 1,
+      "01 — Authentication & Onboarding": 21,
+      "03 — Tiny Planner": 53,
+      "04 — Heart Diary": 36,
+      "05 — Little Kitchen": 120,
+      "06 — Couple Space": 18,
+      "07 — Profile & Settings": 39
+    },
+    "actual_approved_frames": 288,
+    "approved_frames_locked": 288,
+    "preexisting_masters_and_sets": 263,
+    "preexisting_masters_and_sets_locked": 14
+  },
+  "approved_frames_and_exports_unchanged": 288,
+  "protected_layers_matched": 22719,
+  "screen_frames": 20,
+  "locked_little_updates_frames": 20,
+  "verified_native_locks": 553,
+  "screen_dimensions": [
+    390,
+    844
+  ],
+  "individual_preview_dimensions": [
+    780,
+    1688
+  ],
+  "prototype_connections_verified_after_reopen": 128,
+  "prototype_paths": {
+    "open_task_from_inbox": [
+      "01-inbox",
+      "@2122"
+    ],
+    "mark_one_and_open": [
+      "01-inbox",
+      "04-notification-options",
+      "05-mark-one-read",
+      "@2122"
+    ],
+    "mark_all_and_view_read_history": [
+      "01-inbox",
+      "06-mark-all-read",
+      "16-earlier-read",
+      "17-archive-read",
+      "18-growth-read",
+      "06-mark-all-read"
+    ],
+    "shared_journal": [
+      "01-inbox",
+      "@12438"
+    ],
+    "planned_meal": [
+      "01-inbox",
+      "@18163"
+    ],
+    "routine_checkin": [
+      "01-inbox",
+      "@4865"
+    ],
+    "invite_received": [
+      "01-inbox",
+      "02-earlier",
+      "@24752"
+    ],
+    "account_security": [
+      "01-inbox",
+      "02-earlier",
+      "03-archive",
+      "@30811"
+    ],
+    "perfect_month": [
+      "01-inbox",
+      "02-earlier",
+      "03-archive",
+      "19-growth",
+      "@5341"
+    ],
+    "level_up": [
+      "19-growth",
+      "@5388"
+    ],
+    "monthly_recap": [
+      "19-growth",
+      "@5290"
+    ],
+    "empty_inbox_go_home": [
+      "07-empty",
+      "@2"
+    ],
+    "retry_load_inbox": [
+      "09-error",
+      "08-loading",
+      "01-inbox"
+    ],
+    "notification_permission_granted": [
+      "10-request-permission",
+      "01-inbox"
+    ],
+    "permission_denied_then_preferences": [
+      "10-request-permission",
+      "11-permission-denied",
+      "@31492"
+    ],
+    "device_notifications_disabled": [
+      "12-device-disabled",
+      "@31492"
+    ],
+    "notification_preferences": [
+      "01-inbox",
+      "@31270"
+    ],
+    "task_deleted": [
+      "20-fallback-samples",
+      "13-content-deleted",
+      "01-inbox"
+    ],
+    "meal_no_longer_accessible": [
+      "20-fallback-samples",
+      "14-content-inaccessible",
+      "01-inbox"
+    ],
+    "memory_no_longer_shared": [
+      "20-fallback-samples",
+      "15-content-unshared",
+      "01-inbox"
+    ]
+  },
+  "prototype_starting_points": {
+    "01-inbox": "Open Little Updates",
+    "07-empty": "Empty inbox",
+    "09-error": "Retry an unavailable inbox",
+    "10-request-permission": "Notification permission",
+    "12-device-disabled": "Device alerts off",
+    "13-content-deleted": "Deleted task fallback",
+    "14-content-inaccessible": "Inaccessible content fallback",
+    "15-content-unshared": "No longer shared fallback",
+    "20-fallback-samples": "Open unavailable updates"
+  },
+  "notification_deep_links": {
+    "task": {
+      "notification": "Upcoming task reminder",
+      "approved_figcraft_frame": 2122,
+      "destination_name": "Task details"
+    },
+    "checkin": {
+      "notification": "Shared routine partner check-in",
+      "approved_figcraft_frame": 4865,
+      "destination_name": "Routine details · Both checked in"
+    },
+    "diary": {
+      "notification": "New shared diary entry",
+      "approved_figcraft_frame": 12438,
+      "destination_name": "36 · Read partner’s memory"
+    },
+    "meal": {
+      "notification": "Upcoming planned meal reminder",
+      "approved_figcraft_frame": 18163,
+      "destination_name": "39 · Shared planned dinner"
+    },
+    "shared-task": {
+      "notification": "Shared task update",
+      "approved_figcraft_frame": 2122,
+      "destination_name": "Task details"
+    },
+    "routine": {
+      "notification": "Recurring routine reminder",
+      "approved_figcraft_frame": 4670,
+      "destination_name": "Routine details · Both due"
+    },
+    "memory": {
+      "notification": "Partner-shared memory",
+      "approved_figcraft_frame": 12438,
+      "destination_name": "36 · Read partner’s memory"
+    },
+    "meal-change": {
+      "notification": "Shared meal plan update",
+      "approved_figcraft_frame": 16824,
+      "destination_name": "28 · Shared meal plan"
+    },
+    "invite": {
+      "notification": "Partner invitation received",
+      "approved_figcraft_frame": 24752,
+      "destination_name": "09 · Confirm a partner"
+    },
+    "accepted": {
+      "notification": "Invitation accepted",
+      "approved_figcraft_frame": 24808,
+      "destination_name": "17 · Connection confirmed"
+    },
+    "connected": {
+      "notification": "Partner connection successful",
+      "approved_figcraft_frame": 24250,
+      "destination_name": "01 · Connected Couple Space"
+    },
+    "expired": {
+      "notification": "Invitation expired",
+      "approved_figcraft_frame": 24725,
+      "destination_name": "16 · Expired invitation"
+    },
+    "security": {
+      "notification": "Important account security notice",
+      "approved_figcraft_frame": 30811,
+      "destination_name": "16 · Account information"
+    },
+    "perfect": {
+      "notification": "Perfect month celebration",
+      "approved_figcraft_frame": 5341,
+      "destination_name": "Perfect month · Achievement"
+    },
+    "level": {
+      "notification": "Couple level-up notification",
+      "approved_figcraft_frame": 5388,
+      "destination_name": "Level-up celebration"
+    },
+    "monthly": {
+      "notification": "Monthly achievement",
+      "approved_figcraft_frame": 5290,
+      "destination_name": "Together Growth"
+    }
+  },
+  "audit": {
+    "A1": {
+      "inspected": 647,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A2": {
+      "inspected": 225,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A3": {
+      "inspected": 54,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A4": {
+      "inspected": 323,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A5": {
+      "inspected": 121,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A6": {
+      "inspected": 162,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A7": {
+      "inspected": 20,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A8": {
+      "inspected": 2956,
+      "found": 1,
+      "corrected": 1,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": [
+        {
+          "screen": "15-content-unshared",
+          "id": 33139,
+          "layer": "Heading",
+          "finding": "Text extends beyond an intended container"
+        }
+      ]
+    },
+    "A9": {
+      "inspected": 168,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A10": {
+      "inspected": 1548,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    }
+  },
+  "module_identity_gate": [
+    {
+      "criterion": "Warm and encouraging",
+      "status": "PASS",
+      "evidence": "Short event summaries, a quiet empty inbox, and playful envelope, bell and folded-note vectors."
+    },
+    {
+      "criterion": "Scannable composition",
+      "status": "PASS",
+      "evidence": "Chronological groups, one-column cards, stable timestamps and accessible read controls."
+    },
+    {
+      "criterion": "Identity beyond color",
+      "status": "PASS",
+      "evidence": "Geometric mail artwork and the notification-specific icon and timestamp rails."
+    },
+    {
+      "criterion": "Couple experience",
+      "status": "PASS",
+      "evidence": "Shared plans, collaborative routine progress, and invitations use contextual copy. Diary preview text omits the entry title and body."
+    },
+    {
+      "criterion": "Alongio consistency",
+      "status": "PASS",
+      "evidence": "Approved palette, typography, back, status bar and authentication button sources are retained."
+    },
+    {
+      "criterion": "Quality by construction",
+      "status": "PASS",
+      "evidence": "Native variants, matched card geometry, auto-height descriptions, timestamp alignment, contrast and target sizes were measured."
+    },
+    {
+      "criterion": "Distinct supporting module",
+      "status": "PASS",
+      "evidence": "The experience is a chronological inbox with read states and content recovery, independent of the core module layouts."
+    }
+  ],
+  "visual_review": {
+    "reviewed_previews": 20,
+    "corrections": [
+      "Shortened the no-longer-shared empty-state heading so it fits the editable page bounds.",
+      "Repointed the sample check-in to the already approved Both checked in state.",
+      "Added actionable examples for deleted, inaccessible, and no-longer-shared targets."
+    ]
+  },
+  "verification_notes": [
+    "The 285 px metadata rail inset includes the existing 1 px inner border. Its measured position is identical across read and unread variants.",
+    "Active foreground text was checked against the closest resolved solid background with a 4.5:1 contrast threshold. Inactive scrim backgrounds were reviewed visually.",
+    "Every previously approved 2× PNG was compared byte for byte against the reopened FigCraft master."
+  ],
+  "unresolved_product_requirements": [
+    "Define whether opening an item automatically marks it as read, and the retention policy for stale events.",
+    "Confirm notification category defaults and device delivery rules, especially when permissions are denied or a partner’s access changes."
+  ],
+  "prototype_limitations": [
+    "The inbox uses representative sample events and simulated read, permission and recovery states.",
+    "The existing Home bell retains its approved prototype configuration. The named Little Updates flow is the review entry point."
+  ],
+  "screens": {
+    "01-inbox": {
+      "figcraft_id": 31896,
+      "preview": "screens/08-little-updates/01-inbox.png"
+    },
+    "02-earlier": {
+      "figcraft_id": 31992,
+      "preview": "screens/08-little-updates/02-earlier.png"
+    },
+    "03-archive": {
+      "figcraft_id": 32088,
+      "preview": "screens/08-little-updates/03-archive.png"
+    },
+    "19-growth": {
+      "figcraft_id": 32159,
+      "preview": "screens/08-little-updates/19-growth.png"
+    },
+    "04-notification-options": {
+      "figcraft_id": 32229,
+      "preview": "screens/08-little-updates/04-notification-options.png"
+    },
+    "05-mark-one-read": {
+      "figcraft_id": 32340,
+      "preview": "screens/08-little-updates/05-mark-one-read.png"
+    },
+    "06-mark-all-read": {
+      "figcraft_id": 32433,
+      "preview": "screens/08-little-updates/06-mark-all-read.png"
+    },
+    "16-earlier-read": {
+      "figcraft_id": 32523,
+      "preview": "screens/08-little-updates/16-earlier-read.png"
+    },
+    "17-archive-read": {
+      "figcraft_id": 32615,
+      "preview": "screens/08-little-updates/17-archive-read.png"
+    },
+    "18-growth-read": {
+      "figcraft_id": 32680,
+      "preview": "screens/08-little-updates/18-growth-read.png"
+    },
+    "07-empty": {
+      "figcraft_id": 32744,
+      "preview": "screens/08-little-updates/07-empty.png"
+    },
+    "08-loading": {
+      "figcraft_id": 32781,
+      "preview": "screens/08-little-updates/08-loading.png"
+    },
+    "09-error": {
+      "figcraft_id": 32825,
+      "preview": "screens/08-little-updates/09-error.png"
+    },
+    "10-request-permission": {
+      "figcraft_id": 32859,
+      "preview": "screens/08-little-updates/10-request-permission.png"
+    },
+    "11-permission-denied": {
+      "figcraft_id": 32970,
+      "preview": "screens/08-little-updates/11-permission-denied.png"
+    },
+    "12-device-disabled": {
+      "figcraft_id": 33005,
+      "preview": "screens/08-little-updates/12-device-disabled.png"
+    },
+    "13-content-deleted": {
+      "figcraft_id": 33041,
+      "preview": "screens/08-little-updates/13-content-deleted.png"
+    },
+    "14-content-inaccessible": {
+      "figcraft_id": 33075,
+      "preview": "screens/08-little-updates/14-content-inaccessible.png"
+    },
+    "15-content-unshared": {
+      "figcraft_id": 33109,
+      "preview": "screens/08-little-updates/15-content-unshared.png"
+    },
+    "20-fallback-samples": {
+      "figcraft_id": 33143,
+      "preview": "screens/08-little-updates/20-fallback-samples.png"
+    }
+  }
+}

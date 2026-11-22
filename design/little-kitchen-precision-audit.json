@@ -1,0 +1,769 @@
+{
+  "scope": "Updated Kitchen Magic and retained Little Kitchen screens in the editable FigCraft master",
+  "screen_frames": 120,
+  "revised_kitchen_magic_frames": 54,
+  "locked_kitchen_frames": 120,
+  "locked_revised_frames": 54,
+  "protected_exports_unchanged": 111,
+  "unrelated_kitchen_exports_unchanged": 66,
+  "protected_layers_matched": 15370,
+  "all_verified_2x_exports": 231,
+  "screen_dimensions": [
+    390,
+    844
+  ],
+  "individual_preview_dimensions": [
+    780,
+    1688
+  ],
+  "prototype_connections_verified_after_reopen": 681,
+  "prototype_starting_points": {
+    "01-personal": "Personal cookbook",
+    "02-shared": "Shared kitchen",
+    "10-discovery-error": "Recipe discovery retry",
+    "24-saved-empty": "Empty cookbook",
+    "28-plan-shared": "Plan a meal together",
+    "45-plan-error": "Meal plan retry",
+    "40-edit-personal": "Edit a planned dinner",
+    "42-remove-personal": "Remove a planned dinner",
+    "11-kitchen-magic": "Kitchen Magic · Start a request",
+    "14-magic-photo": "Kitchen Magic · Photo-only example",
+    "90-magic-combined": "Kitchen Magic · Combined dinner request",
+    "93-upload-error": "Kitchen Magic · Upload retry",
+    "18-magic-error": "Kitchen Magic · Generation retry",
+    "17-no-magic-results": "Kitchen Magic · No suitable recipe"
+  },
+  "verified_modal_and_generation_paths": {
+    "text_only": [
+      "01-personal",
+      "11-kitchen-magic",
+      "12-magic-keyboard",
+      "13-magic-text",
+      "63-magic-text-loading",
+      "100-text-results",
+      "19-orzo"
+    ],
+    "camera_only": [
+      "11-kitchen-magic",
+      "84-camera-permission",
+      "86-magic-camera",
+      "87-photo-preview",
+      "14-magic-photo",
+      "91-photo-loading",
+      "103-clarification",
+      "92-magic-photo-results"
+    ],
+    "camera_denied_and_gallery": [
+      "11-kitchen-magic",
+      "84-camera-permission",
+      "85-camera-denied",
+      "88-magic-gallery",
+      "118-fridge-selected",
+      "108-gallery-selected",
+      "89-magic-multi"
+    ],
+    "gallery_add_two_to_note": [
+      "13-magic-text",
+      "89-gallery-with-note",
+      "119-fridge-selected-note",
+      "107-gallery-selected-note",
+      "90-magic-combined",
+      "15-magic-loading",
+      "16-magic-results"
+    ],
+    "camera_preserve_note": [
+      "13-magic-text",
+      "122-camera-with-note",
+      "123-captured-with-note",
+      "126-single-with-note"
+    ],
+    "remove_attachment": [
+      "90-magic-combined",
+      "94-attachment-actions",
+      "96-photo-removed"
+    ],
+    "replace_attachment": [
+      "90-magic-combined",
+      "94-attachment-actions",
+      "109-replace-gallery",
+      "97-photo-replaced"
+    ],
+    "upload_retry": [
+      "93-upload-error",
+      "90-magic-combined",
+      "15-magic-loading",
+      "16-magic-results"
+    ],
+    "unclear_photo": [
+      "88-magic-gallery",
+      "102-unclear-attachment",
+      "101-unclear-photo",
+      "12-magic-keyboard"
+    ],
+    "skip_uncertain_recognition": [
+      "91-photo-loading",
+      "103-clarification",
+      "111-uncertain-results"
+    ],
+    "generation_retry": [
+      "18-magic-error",
+      "15-magic-loading",
+      "16-magic-results"
+    ],
+    "refine_and_get_more_ideas": [
+      "16-magic-results",
+      "98-refine-request",
+      "99-magic-alternative-loading",
+      "115-other-magic-results"
+    ],
+    "save_and_plan_from_results": [
+      "16-magic-results",
+      "20-orzo-saved",
+      "30-add-meal",
+      "31-add-meal-shared"
+    ],
+    "plan_directly_from_results": [
+      "16-magic-results",
+      "30-add-meal",
+      "36-added-personal"
+    ]
+  },
+  "audit": {
+    "A1": {
+      "inspected": 2437,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A2": {
+      "inspected": 855,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A3": {
+      "inspected": 372,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A4": {
+      "inspected": 1798,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A5": {
+      "inspected": 588,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A6": {
+      "inspected": 397,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A7": {
+      "inspected": 116,
+      "found": 1,
+      "corrected": 1,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": [
+        {
+          "screen": "93-upload-error",
+          "id": 21511,
+          "layer": "Magic composer",
+          "finding": "Content overruns the safe action area"
+        }
+      ]
+    },
+    "A8": {
+      "inspected": 13451,
+      "found": 1,
+      "corrected": 1,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": [
+        {
+          "screen": "93-upload-error",
+          "id": 21552,
+          "layer": "Counter",
+          "finding": "Text overlaps layer 23017 (Upload failed)"
+        }
+      ]
+    },
+    "A9": {
+      "inspected": 470,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A10": {
+      "inspected": 8989,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    }
+  },
+  "module_identity_gate": [
+    {
+      "criterion": "Emotional identity",
+      "status": "PASS",
+      "evidence": "Matcha paper cover, illustrated mixing bowl and optional warm request starters."
+    },
+    {
+      "criterion": "Task-led composition",
+      "status": "PASS",
+      "evidence": "One expandable request field and one action across text, camera and gallery. Photo actions sit in editable sheets."
+    },
+    {
+      "criterion": "Recognition beyond matcha",
+      "status": "PASS",
+      "evidence": "Illustrated source thumbnails, color-coded recipe covers and editable cooking charac­ters."
+    },
+    {
+      "criterion": "Couple experience",
+      "status": "PASS",
+      "evidence": "Optional dinner-for-two starter and paired cooks in generation. The personal entry point works independently."
+    },
+    {
+      "criterion": "Alongio consistency",
+      "status": "PASS",
+      "evidence": "Reuses the established palette, Space Grotesk, DM Sans, status bar, back and home indicator, and existing Little Kitchen actions."
+    },
+    {
+      "criterion": "Structural craftsmanship",
+      "status": "PASS",
+      "evidence": "MCP inspection verified natural text bounds, native layout, button/icon centering, photo proportions, and clearance above the keyboard."
+    },
+    {
+      "criterion": "Distinct kitchen experience",
+      "status": "PASS",
+      "evidence": "Cookbook recipe cards, practical ingredient notes and photo context, without a chat transcript or ingredient catalog."
+    }
+  ],
+  "visual_review": {
+    "revised_previews_visually_reviewed": 54,
+    "corrections": [
+      "Recovered vertical space for failed photo upload actions so they clear the generate button.",
+      "Preserved the original sample text when attaching photos and showed one- and two-photo selection states.",
+      "Added a distinct replacement image and cleared the utensils away from the paired mascots’ faces."
+    ]
+  },
+  "inspection_limitations": [
+    "This is an editable design prototype with sample text, illustrated attachment thumbnails, a simulated keyboard, a simulated camera/gallery, and representative recipe results. It cannot accept live typed input, open device photos, or perform image recognition.",
+    "Selected request and recipe navigation paths were checked against saved FigCraft interactions. Cross-branch request persistence and live recipe state belong to implementation.",
+    "Protected sections and dependencies were compared against the captured live node tree and the 2× exports were matched byte-for-byte after reopening."
+  ],
+  "screens": {
+    "01-personal": {
+      "figcraft_id": 14338,
+      "preview": "screens/05-little-kitchen/01-personal.png"
+    },
+    "02-shared": {
+      "figcraft_id": 14450,
+      "preview": "screens/05-little-kitchen/02-shared.png"
+    },
+    "03-overview-empty": {
+      "figcraft_id": 14578,
+      "preview": "screens/05-little-kitchen/03-overview-empty.png"
+    },
+    "04-overview-loading": {
+      "figcraft_id": 14686,
+      "preview": "screens/05-little-kitchen/04-overview-loading.png"
+    },
+    "05-discover": {
+      "figcraft_id": 14795,
+      "preview": "screens/05-little-kitchen/05-discover.png"
+    },
+    "06-search": {
+      "figcraft_id": 14875,
+      "preview": "screens/05-little-kitchen/06-search.png"
+    },
+    "07-filtered": {
+      "figcraft_id": 14941,
+      "preview": "screens/05-little-kitchen/07-filtered.png"
+    },
+    "08-no-results": {
+      "figcraft_id": 15002,
+      "preview": "screens/05-little-kitchen/08-no-results.png"
+    },
+    "09-discovery-loading": {
+      "figcraft_id": 15055,
+      "preview": "screens/05-little-kitchen/09-discovery-loading.png"
+    },
+    "10-discovery-error": {
+      "figcraft_id": 15102,
+      "preview": "screens/05-little-kitchen/10-discovery-error.png"
+    },
+    "100-text-results": {
+      "figcraft_id": 22202,
+      "preview": "screens/05-little-kitchen/100-text-results.png"
+    },
+    "101-unclear-photo": {
+      "figcraft_id": 21632,
+      "preview": "screens/05-little-kitchen/101-unclear-photo.png"
+    },
+    "102-unclear-attachment": {
+      "figcraft_id": 21572,
+      "preview": "screens/05-little-kitchen/102-unclear-attachment.png"
+    },
+    "103-clarification": {
+      "figcraft_id": 22079,
+      "preview": "screens/05-little-kitchen/103-clarification.png"
+    },
+    "104-quick-prompt": {
+      "figcraft_id": 21713,
+      "preview": "screens/05-little-kitchen/104-quick-prompt.png"
+    },
+    "105-couple-prompt": {
+      "figcraft_id": 21760,
+      "preview": "screens/05-little-kitchen/105-couple-prompt.png"
+    },
+    "106-reuse-prompt": {
+      "figcraft_id": 21807,
+      "preview": "screens/05-little-kitchen/106-reuse-prompt.png"
+    },
+    "107-gallery-selected-note": {
+      "figcraft_id": 19112,
+      "preview": "screens/05-little-kitchen/107-gallery-selected-note.png"
+    },
+    "108-gallery-selected": {
+      "figcraft_id": 18950,
+      "preview": "screens/05-little-kitchen/108-gallery-selected.png"
+    },
+    "109-replace-gallery": {
+      "figcraft_id": 21277,
+      "preview": "screens/05-little-kitchen/109-replace-gallery.png"
+    },
+    "11-kitchen-magic": {
+      "figcraft_id": 15156,
+      "preview": "screens/05-little-kitchen/11-kitchen-magic.png"
+    },
+    "110-basil-results": {
+      "figcraft_id": 22375,
+      "preview": "screens/05-little-kitchen/110-basil-results.png"
+    },
+    "111-uncertain-results": {
+      "figcraft_id": 22462,
+      "preview": "screens/05-little-kitchen/111-uncertain-results.png"
+    },
+    "112-refine-photos": {
+      "figcraft_id": 22625,
+      "preview": "screens/05-little-kitchen/112-refine-photos.png"
+    },
+    "113-more-text-loading": {
+      "figcraft_id": 22756,
+      "preview": "screens/05-little-kitchen/113-more-text-loading.png"
+    },
+    "114-more-photo-loading": {
+      "figcraft_id": 22795,
+      "preview": "screens/05-little-kitchen/114-more-photo-loading.png"
+    },
+    "115-other-magic-results": {
+      "figcraft_id": 22834,
+      "preview": "screens/05-little-kitchen/115-other-magic-results.png"
+    },
+    "116-alternative-text": {
+      "figcraft_id": 22921,
+      "preview": "screens/05-little-kitchen/116-alternative-text.png"
+    },
+    "117-alternative-photo": {
+      "figcraft_id": 22968,
+      "preview": "screens/05-little-kitchen/117-alternative-photo.png"
+    },
+    "118-fridge-selected": {
+      "figcraft_id": 23341,
+      "preview": "screens/05-little-kitchen/118-fridge-selected.png"
+    },
+    "119-fridge-selected-note": {
+      "figcraft_id": 23406,
+      "preview": "screens/05-little-kitchen/119-fridge-selected-note.png"
+    },
+    "12-magic-keyboard": {
+      "figcraft_id": 15204,
+      "preview": "screens/05-little-kitchen/12-magic-keyboard.png"
+    },
+    "120-counter-selected": {
+      "figcraft_id": 23471,
+      "preview": "screens/05-little-kitchen/120-counter-selected.png"
+    },
+    "121-counter-selected-note": {
+      "figcraft_id": 23536,
+      "preview": "screens/05-little-kitchen/121-counter-selected-note.png"
+    },
+    "122-camera-with-note": {
+      "figcraft_id": 23601,
+      "preview": "screens/05-little-kitchen/122-camera-with-note.png"
+    },
+    "123-captured-with-note": {
+      "figcraft_id": 23633,
+      "preview": "screens/05-little-kitchen/123-captured-with-note.png"
+    },
+    "126-single-with-note": {
+      "figcraft_id": 23671,
+      "preview": "screens/05-little-kitchen/126-single-with-note.png"
+    },
+    "127-counter-note": {
+      "figcraft_id": 23735,
+      "preview": "screens/05-little-kitchen/127-counter-note.png"
+    },
+    "128-counter-photo": {
+      "figcraft_id": 23798,
+      "preview": "screens/05-little-kitchen/128-counter-photo.png"
+    },
+    "129-manage-fridge": {
+      "figcraft_id": 23861,
+      "preview": "screens/05-little-kitchen/129-manage-fridge.png"
+    },
+    "13-magic-text": {
+      "figcraft_id": 15247,
+      "preview": "screens/05-little-kitchen/13-magic-text.png"
+    },
+    "14-magic-photo": {
+      "figcraft_id": 15312,
+      "preview": "screens/05-little-kitchen/14-magic-photo.png"
+    },
+    "15-magic-loading": {
+      "figcraft_id": 21854,
+      "preview": "screens/05-little-kitchen/15-magic-loading.png"
+    },
+    "16-magic-results": {
+      "figcraft_id": 15507,
+      "preview": "screens/05-little-kitchen/16-magic-results.png"
+    },
+    "17-no-magic-results": {
+      "figcraft_id": 21987,
+      "preview": "screens/05-little-kitchen/17-no-magic-results.png"
+    },
+    "18-magic-error": {
+      "figcraft_id": 22033,
+      "preview": "screens/05-little-kitchen/18-magic-error.png"
+    },
+    "19-orzo": {
+      "figcraft_id": 15656,
+      "preview": "screens/05-little-kitchen/19-orzo.png"
+    },
+    "20-orzo-saved": {
+      "figcraft_id": 16203,
+      "preview": "screens/05-little-kitchen/20-orzo-saved.png"
+    },
+    "21-toast": {
+      "figcraft_id": 15810,
+      "preview": "screens/05-little-kitchen/21-toast.png"
+    },
+    "22-peach": {
+      "figcraft_id": 15956,
+      "preview": "screens/05-little-kitchen/22-peach.png"
+    },
+    "23-saved-collection": {
+      "figcraft_id": 16105,
+      "preview": "screens/05-little-kitchen/23-saved-collection.png"
+    },
+    "24-saved-empty": {
+      "figcraft_id": 16167,
+      "preview": "screens/05-little-kitchen/24-saved-empty.png"
+    },
+    "25-remove-saved": {
+      "figcraft_id": 16448,
+      "preview": "screens/05-little-kitchen/25-remove-saved.png"
+    },
+    "26-plan-empty": {
+      "figcraft_id": 16900,
+      "preview": "screens/05-little-kitchen/26-plan-empty.png"
+    },
+    "27-plan-personal": {
+      "figcraft_id": 16757,
+      "preview": "screens/05-little-kitchen/27-plan-personal.png"
+    },
+    "28-plan-shared": {
+      "figcraft_id": 16824,
+      "preview": "screens/05-little-kitchen/28-plan-shared.png"
+    },
+    "29-plan-loading": {
+      "figcraft_id": 16955,
+      "preview": "screens/05-little-kitchen/29-plan-loading.png"
+    },
+    "30-add-meal": {
+      "figcraft_id": 17057,
+      "preview": "screens/05-little-kitchen/30-add-meal.png"
+    },
+    "31-add-meal-shared": {
+      "figcraft_id": 17230,
+      "preview": "screens/05-little-kitchen/31-add-meal-shared.png"
+    },
+    "32-date-sheet-shared": {
+      "figcraft_id": 17389,
+      "preview": "screens/05-little-kitchen/32-date-sheet-shared.png"
+    },
+    "33-date-sheet": {
+      "figcraft_id": 17291,
+      "preview": "screens/05-little-kitchen/33-date-sheet.png"
+    },
+    "34-type-sheet-shared": {
+      "figcraft_id": 17584,
+      "preview": "screens/05-little-kitchen/34-type-sheet-shared.png"
+    },
+    "35-type-sheet": {
+      "figcraft_id": 17487,
+      "preview": "screens/05-little-kitchen/35-type-sheet.png"
+    },
+    "36-added-personal": {
+      "figcraft_id": 17925,
+      "preview": "screens/05-little-kitchen/36-added-personal.png"
+    },
+    "37-added-shared": {
+      "figcraft_id": 18012,
+      "preview": "screens/05-little-kitchen/37-added-shared.png"
+    },
+    "38-personal-meal": {
+      "figcraft_id": 18108,
+      "preview": "screens/05-little-kitchen/38-personal-meal.png"
+    },
+    "39-shared-meal": {
+      "figcraft_id": 18163,
+      "preview": "screens/05-little-kitchen/39-shared-meal.png"
+    },
+    "40-edit-personal": {
+      "figcraft_id": 18341,
+      "preview": "screens/05-little-kitchen/40-edit-personal.png"
+    },
+    "41-edit-shared": {
+      "figcraft_id": 18402,
+      "preview": "screens/05-little-kitchen/41-edit-shared.png"
+    },
+    "42-remove-personal": {
+      "figcraft_id": 18646,
+      "preview": "screens/05-little-kitchen/42-remove-personal.png"
+    },
+    "43-remove-shared": {
+      "figcraft_id": 18722,
+      "preview": "screens/05-little-kitchen/43-remove-shared.png"
+    },
+    "44-orzo-steps": {
+      "figcraft_id": 15739,
+      "preview": "screens/05-little-kitchen/44-orzo-steps.png"
+    },
+    "45-plan-error": {
+      "figcraft_id": 17004,
+      "preview": "screens/05-little-kitchen/45-plan-error.png"
+    },
+    "47-toast-saved": {
+      "figcraft_id": 16286,
+      "preview": "screens/05-little-kitchen/47-toast-saved.png"
+    },
+    "48-peach-saved": {
+      "figcraft_id": 16366,
+      "preview": "screens/05-little-kitchen/48-peach-saved.png"
+    },
+    "49-remove-toast": {
+      "figcraft_id": 16552,
+      "preview": "screens/05-little-kitchen/49-remove-toast.png"
+    },
+    "50-remove-peach": {
+      "figcraft_id": 16653,
+      "preview": "screens/05-little-kitchen/50-remove-peach.png"
+    },
+    "51-toast-steps": {
+      "figcraft_id": 15890,
+      "preview": "screens/05-little-kitchen/51-toast-steps.png"
+    },
+    "52-peach-steps": {
+      "figcraft_id": 16038,
+      "preview": "screens/05-little-kitchen/52-peach-steps.png"
+    },
+    "53-shared-lunch": {
+      "figcraft_id": 18277,
+      "preview": "screens/05-little-kitchen/53-shared-lunch.png"
+    },
+    "54-personal-lunch": {
+      "figcraft_id": 18227,
+      "preview": "screens/05-little-kitchen/54-personal-lunch.png"
+    },
+    "55-date-selected-shared": {
+      "figcraft_id": 17742,
+      "preview": "screens/05-little-kitchen/55-date-selected-shared.png"
+    },
+    "56-date-selected": {
+      "figcraft_id": 17681,
+      "preview": "screens/05-little-kitchen/56-date-selected.png"
+    },
+    "57-lunch-selected-shared": {
+      "figcraft_id": 17864,
+      "preview": "screens/05-little-kitchen/57-lunch-selected-shared.png"
+    },
+    "58-lunch-selected": {
+      "figcraft_id": 17803,
+      "preview": "screens/05-little-kitchen/58-lunch-selected.png"
+    },
+    "59-removed-personal": {
+      "figcraft_id": 18807,
+      "preview": "screens/05-little-kitchen/59-removed-personal.png"
+    },
+    "60-removed-shared": {
+      "figcraft_id": 18870,
+      "preview": "screens/05-little-kitchen/60-removed-shared.png"
+    },
+    "61-plan-toast": {
+      "figcraft_id": 17118,
+      "preview": "screens/05-little-kitchen/61-plan-toast.png"
+    },
+    "62-plan-peach": {
+      "figcraft_id": 17174,
+      "preview": "screens/05-little-kitchen/62-plan-peach.png"
+    },
+    "63-magic-text-loading": {
+      "figcraft_id": 21909,
+      "preview": "screens/05-little-kitchen/63-magic-text-loading.png"
+    },
+    "64-personal-meal-updated": {
+      "figcraft_id": 18463,
+      "preview": "screens/05-little-kitchen/64-personal-meal-updated.png"
+    },
+    "65-shared-meal-updated": {
+      "figcraft_id": 18550,
+      "preview": "screens/05-little-kitchen/65-shared-meal-updated.png"
+    },
+    "70-saved-method": {
+      "figcraft_id": 19322,
+      "preview": "screens/05-little-kitchen/70-saved-method.png"
+    },
+    "71-saved-method": {
+      "figcraft_id": 19393,
+      "preview": "screens/05-little-kitchen/71-saved-method.png"
+    },
+    "72-saved-method": {
+      "figcraft_id": 19459,
+      "preview": "screens/05-little-kitchen/72-saved-method.png"
+    },
+    "76-other-selection": {
+      "figcraft_id": 19526,
+      "preview": "screens/05-little-kitchen/76-other-selection.png"
+    },
+    "77-other-selection": {
+      "figcraft_id": 19587,
+      "preview": "screens/05-little-kitchen/77-other-selection.png"
+    },
+    "78-other-selection": {
+      "figcraft_id": 19648,
+      "preview": "screens/05-little-kitchen/78-other-selection.png"
+    },
+    "79-other-selection": {
+      "figcraft_id": 19709,
+      "preview": "screens/05-little-kitchen/79-other-selection.png"
+    },
+    "80-edit-date": {
+      "figcraft_id": 19770,
+      "preview": "screens/05-little-kitchen/80-edit-date.png"
+    },
+    "81-edited-date": {
+      "figcraft_id": 19861,
+      "preview": "screens/05-little-kitchen/81-edited-date.png"
+    },
+    "82-edit-shared-date": {
+      "figcraft_id": 19922,
+      "preview": "screens/05-little-kitchen/82-edit-shared-date.png"
+    },
+    "83-edited-shared-date": {
+      "figcraft_id": 20013,
+      "preview": "screens/05-little-kitchen/83-edited-shared-date.png"
+    },
+    "84-camera-permission": {
+      "figcraft_id": 15374,
+      "preview": "screens/05-little-kitchen/84-camera-permission.png"
+    },
+    "85-camera-denied": {
+      "figcraft_id": 15425,
+      "preview": "screens/05-little-kitchen/85-camera-denied.png"
+    },
+    "86-magic-camera": {
+      "figcraft_id": 15466,
+      "preview": "screens/05-little-kitchen/86-magic-camera.png"
+    },
+    "87-photo-preview": {
+      "figcraft_id": 15563,
+      "preview": "screens/05-little-kitchen/87-photo-preview.png"
+    },
+    "88-magic-gallery": {
+      "figcraft_id": 15609,
+      "preview": "screens/05-little-kitchen/88-magic-gallery.png"
+    },
+    "89-gallery-with-note": {
+      "figcraft_id": 19052,
+      "preview": "screens/05-little-kitchen/89-gallery-with-note.png"
+    },
+    "89-magic-multi": {
+      "figcraft_id": 18999,
+      "preview": "screens/05-little-kitchen/89-magic-multi.png"
+    },
+    "90-magic-combined": {
+      "figcraft_id": 19168,
+      "preview": "screens/05-little-kitchen/90-magic-combined.png"
+    },
+    "91-photo-loading": {
+      "figcraft_id": 21948,
+      "preview": "screens/05-little-kitchen/91-photo-loading.png"
+    },
+    "92-magic-photo-results": {
+      "figcraft_id": 22288,
+      "preview": "screens/05-little-kitchen/92-magic-photo-results.png"
+    },
+    "93-upload-error": {
+      "figcraft_id": 21482,
+      "preview": "screens/05-little-kitchen/93-upload-error.png"
+    },
+    "94-attachment-actions": {
+      "figcraft_id": 19266,
+      "preview": "screens/05-little-kitchen/94-attachment-actions.png"
+    },
+    "95-photo-actions": {
+      "figcraft_id": 21167,
+      "preview": "screens/05-little-kitchen/95-photo-actions.png"
+    },
+    "96-photo-removed": {
+      "figcraft_id": 21336,
+      "preview": "screens/05-little-kitchen/96-photo-removed.png"
+    },
+    "97-photo-replaced": {
+      "figcraft_id": 21405,
+      "preview": "screens/05-little-kitchen/97-photo-replaced.png"
+    },
+    "98-refine-request": {
+      "figcraft_id": 22549,
+      "preview": "screens/05-little-kitchen/98-refine-request.png"
+    },
+    "99-magic-alternative-loading": {
+      "figcraft_id": 22701,
+      "preview": "screens/05-little-kitchen/99-magic-alternative-loading.png"
+    }
+  }
+}

@@ -1,0 +1,291 @@
+{
+  "screen_frames": 53,
+  "screen_dimensions": [
+    390,
+    844
+  ],
+  "individual_preview_dimensions": [
+    780,
+    1688
+  ],
+  "locked_planner_frames": 53,
+  "protected_exports_unchanged": 22,
+  "protected_layers_matched": 1445,
+  "scope": "All 53 existing Tiny Planner screens and relevant editable module masters",
+  "counts_note": "Checks of different criteria can include the same layer. Found starts with violations of the numerical rule in the baseline. Corrected counts include replacements with reusable native constructions. A2 tests the geometry of identified icon wells, not perceived optical weight. A7 counts seven measured layout gaps; visual whitespace was reviewed on all screen previews. A8 also checks pairs of visible text boxes on the same modal layer. Prototype interactions were compared to the original node data.",
+  "audit": {
+    "A1": {
+      "inspected": 87,
+      "found": 87,
+      "corrected": 87,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": [
+        {
+          "screen": "Planner overview",
+          "layer": "Bottom navigation",
+          "id": 1653,
+          "finding": "Non-token padding or hand-spaced equal cells"
+        },
+        {
+          "screen": "Planner overview",
+          "layer": "Planner views",
+          "id": 3841,
+          "finding": "Non-token padding or hand-spaced equal cells"
+        },
+        {
+          "screen": "Daily agenda",
+          "layer": "Bottom navigation",
+          "id": 1795,
+          "finding": "Non-token padding or hand-spaced equal cells"
+        },
+        {
+          "screen": "Daily agenda",
+          "layer": "Add a task",
+          "id": 3353,
+          "finding": "Primary button padding or icon gap"
+        }
+      ]
+    },
+    "A2": {
+      "inspected": 419,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A3": {
+      "inspected": 166,
+      "found": 14,
+      "corrected": 14,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": [
+        {
+          "screen": "Planner overview",
+          "layer": "See agenda",
+          "id": 1675,
+          "finding": "Button content is not centered as a native group"
+        },
+        {
+          "screen": "Calendar",
+          "layer": "View agenda",
+          "id": 1983,
+          "finding": "Button content is not centered as a native group"
+        },
+        {
+          "screen": "Edit task",
+          "layer": "Delete task",
+          "id": 2215,
+          "finding": "Button content is not centered as a native group"
+        },
+        {
+          "screen": "Choose a date",
+          "layer": "Delete task",
+          "id": 2267,
+          "finding": "Button content is not centered as a native group"
+        }
+      ]
+    },
+    "A4": {
+      "inspected": 1086,
+      "found": 640,
+      "corrected": 640,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": [
+        {
+          "screen": "Planner overview",
+          "layer": "See agenda",
+          "id": 1676,
+          "finding": "Text sizing is height; expected widthAndHeight"
+        },
+        {
+          "screen": "Planner overview",
+          "layer": "Task title",
+          "id": 1683,
+          "finding": "Text sizing is height; expected widthAndHeight"
+        },
+        {
+          "screen": "Planner overview",
+          "layer": "Task summary",
+          "id": 1684,
+          "finding": "Text sizing is height; expected widthAndHeight"
+        },
+        {
+          "screen": "Planner overview",
+          "layer": "Task title",
+          "id": 1691,
+          "finding": "Text sizing is height; expected widthAndHeight"
+        }
+      ]
+    },
+    "A5": {
+      "inspected": 242,
+      "found": 226,
+      "corrected": 226,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": [
+        {
+          "screen": "Planner overview",
+          "layer": "Bottom navigation",
+          "id": 1653,
+          "finding": "Dock items lack a shared native layout"
+        },
+        {
+          "screen": "Planner overview",
+          "layer": "Pick up coffee",
+          "id": 1678,
+          "finding": "Task card uses nonstandard dimensions or manual content"
+        },
+        {
+          "screen": "Planner overview",
+          "layer": "Dinner together",
+          "id": 1686,
+          "finding": "Task card uses nonstandard dimensions or manual content"
+        },
+        {
+          "screen": "Planner overview",
+          "layer": "Water the plants",
+          "id": 1694,
+          "finding": "Task card uses nonstandard dimensions or manual content"
+        }
+      ]
+    },
+    "A6": {
+      "inspected": 159,
+      "found": 51,
+      "corrected": 51,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": [
+        {
+          "screen": "Planner overview",
+          "layer": "Planner views",
+          "id": 3841,
+          "finding": "Navigation or home indicator differs from its standard anchor"
+        },
+        {
+          "screen": "Daily agenda",
+          "layer": "Planner views",
+          "id": 3858,
+          "finding": "Navigation or home indicator differs from its standard anchor"
+        },
+        {
+          "screen": "Calendar",
+          "layer": "Planner views",
+          "id": 3875,
+          "finding": "Navigation or home indicator differs from its standard anchor"
+        },
+        {
+          "screen": "Create task · Empty",
+          "layer": "Back",
+          "id": 2033,
+          "finding": "Header is not aligned through its parent row"
+        }
+      ]
+    },
+    "A7": {
+      "inspected": 7,
+      "found": 6,
+      "corrected": 6,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": [
+        {
+          "screen": "Create personal routine",
+          "layer": "Every planned date is added to your calendar.",
+          "id": 4334,
+          "finding": "Form guidance is detached from the last row"
+        },
+        {
+          "screen": "Create shared routine",
+          "layer": "Both of you can see the routine and check in from your own account.",
+          "id": 4390,
+          "finding": "Form guidance is detached from the last row"
+        },
+        {
+          "screen": "Edit routine",
+          "layer": "Schedule changes apply to future dates. Your past check-ins stay in your history.",
+          "id": 4454,
+          "finding": "Form guidance is detached from the last row"
+        },
+        {
+          "screen": "Routines · Empty",
+          "layer": "Routine state",
+          "id": 5521,
+          "finding": "State panel and action use an oversized gap"
+        }
+      ]
+    },
+    "A8": {
+      "inspected": 1015,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A9": {
+      "inspected": 43,
+      "found": 25,
+      "corrected": 25,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": [
+        {
+          "screen": "Planner overview",
+          "layer": "Planner views",
+          "id": 3841,
+          "finding": "Shared control changes its anchor or footprint between states"
+        },
+        {
+          "screen": "Planner overview",
+          "layer": "Planner hero",
+          "id": 1614,
+          "finding": "Overview state artwork starts in a different slot"
+        },
+        {
+          "screen": "Daily agenda",
+          "layer": "Planner views",
+          "id": 3858,
+          "finding": "Shared control changes its anchor or footprint between states"
+        },
+        {
+          "screen": "Calendar",
+          "layer": "Planner views",
+          "id": 3875,
+          "finding": "Shared control changes its anchor or footprint between states"
+        }
+      ]
+    },
+    "A10": {
+      "inspected": 53,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    }
+  },
+  "visible_text_overlap": {
+    "pairs": 12923,
+    "overlap": []
+  },
+  "inspection_limitations": [
+    "MCP reports geometric layer bounds. Optical centering and intentional decorative overlaps were reviewed visually.",
+    "The audit applies to the 390 × 844 design and saved example content. It does not measure app-runtime behavior or unprovided content."
+  ]
+}

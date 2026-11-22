@@ -1,0 +1,332 @@
+{
+  "scope": "Couple Space overview, shared destinations and partner connection states",
+  "approved_baseline": {
+    "screens": {
+      "Home": 1,
+      "01 — Authentication & Onboarding": 21,
+      "03 — Tiny Planner": 53,
+      "04 — Heart Diary": 36,
+      "05 — Little Kitchen": 120
+    },
+    "locked_frames": 231,
+    "component_masters": 210,
+    "locked_component_masters": 14,
+    "unlocked_component_masters": 196
+  },
+  "protected_layers_matched": 18951,
+  "protected_exports_unchanged": 231,
+  "screen_frames": 18,
+  "locked_couple_space_frames": 18,
+  "native_locks_verified": 556,
+  "screen_dimensions": [
+    390,
+    844
+  ],
+  "individual_preview_dimensions": [
+    780,
+    1688
+  ],
+  "prototype_connections_verified_after_reopen": 65,
+  "verified_prototype_paths": {
+    "shared_task": [
+      "01-us-overview",
+      "02-shared-plans",
+      "@2122"
+    ],
+    "shared_routines": [
+      "01-us-overview",
+      "02-shared-plans",
+      "@4098"
+    ],
+    "together_growth": [
+      "01-us-overview",
+      "@5290"
+    ],
+    "shared_diary": [
+      "01-us-overview",
+      "@10830"
+    ],
+    "shared_meal_plan": [
+      "01-us-overview",
+      "@16824"
+    ],
+    "send_an_invitation": [
+      "03-unconnected",
+      "04-invite",
+      "05-code-copied",
+      "06-pending",
+      "18-pending-code-copied",
+      "17-connected",
+      "01-us-overview"
+    ],
+    "join_with_a_code": [
+      "03-unconnected",
+      "07-enter-code",
+      "08-code-entered",
+      "09-review-partner",
+      "17-connected",
+      "01-us-overview"
+    ],
+    "invalid_code_retry": [
+      "15-invalid-code",
+      "08-code-entered",
+      "09-review-partner"
+    ],
+    "expired_code_retry": [
+      "16-expired-code",
+      "08-code-entered",
+      "09-review-partner"
+    ],
+    "disconnect": [
+      "01-us-overview",
+      "10-manage",
+      "11-disconnect",
+      "12-disconnected"
+    ],
+    "keep_partner_connection": [
+      "01-us-overview",
+      "10-manage",
+      "11-disconnect",
+      "10-manage"
+    ],
+    "cancel_invitation": [
+      "06-pending",
+      "13-cancel-invite",
+      "14-canceled",
+      "03-unconnected"
+    ]
+  },
+  "audit": {
+    "A1": {
+      "inspected": 290,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A2": {
+      "inspected": 147,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A3": {
+      "inspected": 35,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A4": {
+      "inspected": 210,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A5": {
+      "inspected": 55,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A6": {
+      "inspected": 67,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A7": {
+      "inspected": 18,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A8": {
+      "inspected": 1139,
+      "found": 2,
+      "corrected": 2,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": [
+        {
+          "screen": "01-us-overview",
+          "layer": "Diary shortcut illustration",
+          "finding": "Illustration encroached on the label before absolute anchoring"
+        },
+        {
+          "screen": "01-us-overview",
+          "layer": "Kitchen shortcut illustration",
+          "finding": "Illustration encroached on the label before absolute anchoring"
+        }
+      ]
+    },
+    "A9": {
+      "inspected": 74,
+      "found": 1,
+      "corrected": 1,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": [
+        {
+          "screen": "16-expired-code",
+          "layer": "Invitation code field",
+          "finding": "Recovery copy changed the field’s vertical anchor before matching the code-entry form"
+        }
+      ]
+    },
+    "A10": {
+      "inspected": 1144,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    }
+  },
+  "module_identity_gate": [
+    {
+      "criterion": "Warm, private identity",
+      "status": "PASS",
+      "evidence": "Paired characters share a geometric window with a clear relationship name."
+    },
+    {
+      "criterion": "Composition suits the work",
+      "status": "PASS",
+      "evidence": "The connected overview is a short set of entry points, with focused invitation and recovery screens."
+    },
+    {
+      "criterion": "Recognizable beyond color",
+      "status": "PASS",
+      "evidence": "Complementary circle and square, ticket-shaped invitation, and illustrated asymmetric shared shortcuts."
+    },
+    {
+      "criterion": "Collaborative experience",
+      "status": "PASS",
+      "evidence": "Shared completion count, shared activity preview, shared diary and meals, and partner confirmation."
+    },
+    {
+      "criterion": "Alongio consistency",
+      "status": "PASS",
+      "evidence": "Approved typography, palette, dark dock structure, back controls, illustration language, and 20 px insets."
+    },
+    {
+      "criterion": "Structural craftsmanship",
+      "status": "PASS",
+      "evidence": "Variant dimensions and native layout verified via MCP alongside bounds and exported visuals."
+    },
+    {
+      "criterion": "Distinct module experience",
+      "status": "PASS",
+      "evidence": "The paired identity and invitation ticket distinguish Us from the planner, scrapbook and cookbook."
+    }
+  ],
+  "visual_review": {
+    "reviewed_previews": 18,
+    "corrections": [
+      "Moved both artwork layers away from module labels.",
+      "Kept pending invitation context when copying a code.",
+      "Aligned expired-code recovery with the code-entry form."
+    ]
+  },
+  "inspection_limitations": [
+    "Invitation codes and outcomes are sample prototype states. No invitations or clipboard contents are sent or changed by the design artifact.",
+    "Couple Space flows can be started from their named FigCraft starting points. Existing screens still have their original prototype connections. The new Us overview links outward to the approved shared destinations.",
+    "Existing approved shared library masters and sets retain their original native lock states."
+  ],
+  "screens": {
+    "01-us-overview": {
+      "figcraft_id": 24250,
+      "preview": "screens/06-couple-space/01-us-overview.png"
+    },
+    "02-shared-plans": {
+      "figcraft_id": 24356,
+      "preview": "screens/06-couple-space/02-shared-plans.png"
+    },
+    "03-unconnected": {
+      "figcraft_id": 24396,
+      "preview": "screens/06-couple-space/03-unconnected.png"
+    },
+    "04-invite": {
+      "figcraft_id": 24475,
+      "preview": "screens/06-couple-space/04-invite.png"
+    },
+    "05-code-copied": {
+      "figcraft_id": 24523,
+      "preview": "screens/06-couple-space/05-code-copied.png"
+    },
+    "06-pending": {
+      "figcraft_id": 24576,
+      "preview": "screens/06-couple-space/06-pending.png"
+    },
+    "07-enter-code": {
+      "figcraft_id": 24624,
+      "preview": "screens/06-couple-space/07-enter-code.png"
+    },
+    "08-code-entered": {
+      "figcraft_id": 24656,
+      "preview": "screens/06-couple-space/08-code-entered.png"
+    },
+    "15-invalid-code": {
+      "figcraft_id": 24688,
+      "preview": "screens/06-couple-space/15-invalid-code.png"
+    },
+    "16-expired-code": {
+      "figcraft_id": 24725,
+      "preview": "screens/06-couple-space/16-expired-code.png"
+    },
+    "09-review-partner": {
+      "figcraft_id": 24752,
+      "preview": "screens/06-couple-space/09-review-partner.png"
+    },
+    "17-connected": {
+      "figcraft_id": 24808,
+      "preview": "screens/06-couple-space/17-connected.png"
+    },
+    "10-manage": {
+      "figcraft_id": 24859,
+      "preview": "screens/06-couple-space/10-manage.png"
+    },
+    "11-disconnect": {
+      "figcraft_id": 24911,
+      "preview": "screens/06-couple-space/11-disconnect.png"
+    },
+    "12-disconnected": {
+      "figcraft_id": 24984,
+      "preview": "screens/06-couple-space/12-disconnected.png"
+    },
+    "13-cancel-invite": {
+      "figcraft_id": 25067,
+      "preview": "screens/06-couple-space/13-cancel-invite.png"
+    },
+    "14-canceled": {
+      "figcraft_id": 25136,
+      "preview": "screens/06-couple-space/14-canceled.png"
+    },
+    "18-pending-code-copied": {
+      "figcraft_id": 25183,
+      "preview": "screens/06-couple-space/18-pending-code-copied.png"
+    }
+  }
+}

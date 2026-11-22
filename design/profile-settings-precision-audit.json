@@ -1,0 +1,476 @@
+{
+  "screen_frames": 39,
+  "locked_profile_settings_frames": 39,
+  "verified_native_locks": 1226,
+  "approved_baseline": {
+    "screens": {
+      "Home": 1,
+      "01 — Authentication & Onboarding": 21,
+      "03 — Tiny Planner": 53,
+      "04 — Heart Diary": 36,
+      "05 — Little Kitchen": 120,
+      "06 — Couple Space": 18
+    },
+    "frames": 249,
+    "locked": 249,
+    "masters_and_sets": 233,
+    "masters_and_sets_locked": 14
+  },
+  "protected_layers_matched": 20081,
+  "protected_exports_unchanged": 249,
+  "screen_dimensions": [
+    390,
+    844
+  ],
+  "individual_preview_dimensions": [
+    780,
+    1688
+  ],
+  "prototype_paths": {
+    "display_name_save": [
+      "01-me",
+      "03-edit-profile",
+      "04-name-edited",
+      "11-profile-saving",
+      "30-profile-saved",
+      "31-me-updated"
+    ],
+    "display_name_validation": [
+      "03-edit-profile",
+      "04-name-edited",
+      "09-profile-error",
+      "04-name-edited"
+    ],
+    "discard_unsaved_profile": [
+      "04-name-edited",
+      "10-discard-profile",
+      "01-me"
+    ],
+    "choose_profile_photo": [
+      "03-edit-profile",
+      "05-photo-source",
+      "06-photo-gallery",
+      "08-photo-review",
+      "33-profile-photo-draft",
+      "38-saving-photo",
+      "39-photo-saved",
+      "40-me-photo"
+    ],
+    "take_profile_photo": [
+      "03-edit-profile",
+      "05-photo-source",
+      "32-camera-permission",
+      "07-photo-camera",
+      "08-photo-review",
+      "33-profile-photo-draft"
+    ],
+    "switch_experience_mode": [
+      "02-me-couple",
+      "13-mode-couple",
+      "14-switch-personal",
+      "15-mode-switched",
+      "35-me-personal-linked",
+      "36-mode-linked",
+      "02-me-couple"
+    ],
+    "manage_connection_separately": [
+      "35-me-personal-linked",
+      "36-mode-linked",
+      "@24250"
+    ],
+    "connect_partner": [
+      "01-me",
+      "12-mode-personal",
+      "@24396"
+    ],
+    "password_validation_and_change": [
+      "01-me",
+      "16-account",
+      "17-password",
+      "37-password-mismatch-draft",
+      "19-password-error",
+      "18-password-entered",
+      "20-password-success",
+      "16-account"
+    ],
+    "log_out": [
+      "01-me",
+      "16-account",
+      "21-logout",
+      "@808"
+    ],
+    "keep_account": [
+      "01-me",
+      "16-account",
+      "22-delete",
+      "16-account"
+    ],
+    "review_privacy": [
+      "01-me",
+      "24-privacy"
+    ],
+    "select_notification_category": [
+      "01-me",
+      "25-notifications",
+      "26-notification-edited",
+      "25-notifications"
+    ],
+    "notification_permission": [
+      "27-notification-permission",
+      "28-notification-off",
+      "34-device-settings",
+      "25-notifications"
+    ],
+    "about": [
+      "01-me",
+      "29-about"
+    ]
+  },
+  "prototype_connections_verified_after_reopen": 200,
+  "prototype_starting_points": {
+    "01-me": "Personal profile",
+    "02-me-couple": "Couple profile",
+    "05-photo-source": "Update profile photo",
+    "19-password-error": "Password mismatch recovery",
+    "27-notification-permission": "Notification permission",
+    "22-delete": "Account deletion review"
+  },
+  "audit": {
+    "A1": {
+      "inspected": 788,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A2": {
+      "inspected": 382,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A3": {
+      "inspected": 63,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A4": {
+      "inspected": 528,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A5": {
+      "inspected": 132,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A6": {
+      "inspected": 125,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A7": {
+      "inspected": 39,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A8": {
+      "inspected": 3589,
+      "found": 12,
+      "corrected": 12,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": [
+        {
+          "screen": "12-mode-personal",
+          "id": 30399,
+          "layer": "A space for two",
+          "finding": "Text extends beyond an intended container"
+        },
+        {
+          "screen": "13-mode-couple",
+          "id": 30454,
+          "layer": "A space for two",
+          "finding": "Text extends beyond an intended container"
+        },
+        {
+          "screen": "13-mode-couple",
+          "id": 30454,
+          "layer": "A space for two",
+          "finding": "Text overlaps layer 30455 (Current)"
+        },
+        {
+          "screen": "14-switch-personal",
+          "id": 30509,
+          "layer": "A space for two",
+          "finding": "Text extends beyond an intended container"
+        },
+        {
+          "screen": "14-switch-personal",
+          "id": 30509,
+          "layer": "A space for two",
+          "finding": "Text overlaps layer 30510 (Current)"
+        },
+        {
+          "screen": "36-mode-linked",
+          "id": 30798,
+          "layer": "A space for two",
+          "finding": "Text extends beyond an intended container"
+        }
+      ]
+    },
+    "A9": {
+      "inspected": 158,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    },
+    "A10": {
+      "inspected": 2671,
+      "found": 0,
+      "corrected": 0,
+      "unresolved": 0,
+      "status": "PASS",
+      "remaining": [],
+      "baselineExamples": []
+    }
+  },
+  "module_identity_gate": [
+    {
+      "criterion": "Personal identity",
+      "status": "PASS",
+      "evidence": "An indigo profile card uses a named profile and individual mascot, with the edit action next to the name."
+    },
+    {
+      "criterion": "Functional restraint",
+      "status": "PASS",
+      "evidence": "The overview groups settings by intent. Account, privacy, and alerts use short headings and native settings rows."
+    },
+    {
+      "criterion": "Recognizable beyond color",
+      "status": "PASS",
+      "evidence": "Geometric profile portraits, inset icon wells, paper cutouts, and predictable focused sheets."
+    },
+    {
+      "criterion": "Personal and couple experience",
+      "status": "PASS",
+      "evidence": "Modes have clear names, privacy copy, and a distinct link to Couple Space for partner management."
+    },
+    {
+      "criterion": "Alongio consistency",
+      "status": "PASS",
+      "evidence": "Reuses approved typography, palette, back, status and dock structure, and authentication control variants."
+    },
+    {
+      "criterion": "Quality by construction",
+      "status": "PASS",
+      "evidence": "Native layouts, content-based text, editable vectors, form geometry, and touch targets verified in MCP."
+    },
+    {
+      "criterion": "Distinct supporting module",
+      "status": "PASS",
+      "evidence": "The overview leads with identity and simple settings groups, with no activity counters or shared dashboards."
+    }
+  ],
+  "visual_review": {
+    "reviewed_previews": 39,
+    "checked": "Safe-area spacing, card and sheet composition, contrast, content order, field alignment, destructive confirmation, and the Me-active navigation."
+  },
+  "unresolved_product_requirements": [
+    "Define what shared content remains visible or accessible in Personal Mode with a connected partner, and how the app restores the previously selected view. The design illustrates mode switching as separate from disconnecting.",
+    "Confirm whether verified account email can be changed and define re-verification or recovery if supported. Account displays the existing verified email.",
+    "Define eligibility, re-authentication, timing, and confirmation for account deletion, plus what happens to shared plans, memories, meals, and the partner connection. The design shows an explicit confirmation with deletion unavailable until rules are defined.",
+    "Confirm delivery defaults and OS behavior for each notification category."
+  ],
+  "prototype_limitations": [
+    "Name, photo and password examples use preset interaction states. The camera, gallery and device settings are design simulations. The photo sample is an editable illustration.",
+    "The Me experience has named FigCraft starting points and native links to approved destinations. Approved incoming navigation and existing connections retain their original state."
+  ],
+  "screens": {
+    "01-me": {
+      "figcraft_id": 29199,
+      "preview": "screens/07-profile-settings/01-me.png"
+    },
+    "02-me-couple": {
+      "figcraft_id": 29300,
+      "preview": "screens/07-profile-settings/02-me-couple.png"
+    },
+    "03-edit-profile": {
+      "figcraft_id": 29401,
+      "preview": "screens/07-profile-settings/03-edit-profile.png"
+    },
+    "04-name-edited": {
+      "figcraft_id": 29438,
+      "preview": "screens/07-profile-settings/04-name-edited.png"
+    },
+    "09-profile-error": {
+      "figcraft_id": 29478,
+      "preview": "screens/07-profile-settings/09-profile-error.png"
+    },
+    "11-profile-saving": {
+      "figcraft_id": 29519,
+      "preview": "screens/07-profile-settings/11-profile-saving.png"
+    },
+    "30-profile-saved": {
+      "figcraft_id": 29558,
+      "preview": "screens/07-profile-settings/30-profile-saved.png"
+    },
+    "31-me-updated": {
+      "figcraft_id": 29676,
+      "preview": "screens/07-profile-settings/31-me-updated.png"
+    },
+    "10-discard-profile": {
+      "figcraft_id": 29777,
+      "preview": "screens/07-profile-settings/10-discard-profile.png"
+    },
+    "38-saving-photo": {
+      "figcraft_id": 29835,
+      "preview": "screens/07-profile-settings/38-saving-photo.png"
+    },
+    "39-photo-saved": {
+      "figcraft_id": 29876,
+      "preview": "screens/07-profile-settings/39-photo-saved.png"
+    },
+    "40-me-photo": {
+      "figcraft_id": 29996,
+      "preview": "screens/07-profile-settings/40-me-photo.png"
+    },
+    "05-photo-source": {
+      "figcraft_id": 30100,
+      "preview": "screens/07-profile-settings/05-photo-source.png"
+    },
+    "32-camera-permission": {
+      "figcraft_id": 30166,
+      "preview": "screens/07-profile-settings/32-camera-permission.png"
+    },
+    "07-photo-camera": {
+      "figcraft_id": 30218,
+      "preview": "screens/07-profile-settings/07-photo-camera.png"
+    },
+    "06-photo-gallery": {
+      "figcraft_id": 30250,
+      "preview": "screens/07-profile-settings/06-photo-gallery.png"
+    },
+    "08-photo-review": {
+      "figcraft_id": 30282,
+      "preview": "screens/07-profile-settings/08-photo-review.png"
+    },
+    "33-profile-photo-draft": {
+      "figcraft_id": 30316,
+      "preview": "screens/07-profile-settings/33-profile-photo-draft.png"
+    },
+    "12-mode-personal": {
+      "figcraft_id": 30356,
+      "preview": "screens/07-profile-settings/12-mode-personal.png"
+    },
+    "13-mode-couple": {
+      "figcraft_id": 30411,
+      "preview": "screens/07-profile-settings/13-mode-couple.png"
+    },
+    "14-switch-personal": {
+      "figcraft_id": 30466,
+      "preview": "screens/07-profile-settings/14-switch-personal.png"
+    },
+    "15-mode-switched": {
+      "figcraft_id": 30536,
+      "preview": "screens/07-profile-settings/15-mode-switched.png"
+    },
+    "35-me-personal-linked": {
+      "figcraft_id": 30654,
+      "preview": "screens/07-profile-settings/35-me-personal-linked.png"
+    },
+    "36-mode-linked": {
+      "figcraft_id": 30755,
+      "preview": "screens/07-profile-settings/36-mode-linked.png"
+    },
+    "16-account": {
+      "figcraft_id": 30811,
+      "preview": "screens/07-profile-settings/16-account.png"
+    },
+    "17-password": {
+      "figcraft_id": 30861,
+      "preview": "screens/07-profile-settings/17-password.png"
+    },
+    "37-password-mismatch-draft": {
+      "figcraft_id": 30902,
+      "preview": "screens/07-profile-settings/37-password-mismatch-draft.png"
+    },
+    "18-password-entered": {
+      "figcraft_id": 30943,
+      "preview": "screens/07-profile-settings/18-password-entered.png"
+    },
+    "19-password-error": {
+      "figcraft_id": 30984,
+      "preview": "screens/07-profile-settings/19-password-error.png"
+    },
+    "20-password-success": {
+      "figcraft_id": 31030,
+      "preview": "screens/07-profile-settings/20-password-success.png"
+    },
+    "21-logout": {
+      "figcraft_id": 31097,
+      "preview": "screens/07-profile-settings/21-logout.png"
+    },
+    "22-delete": {
+      "figcraft_id": 31165,
+      "preview": "screens/07-profile-settings/22-delete.png"
+    },
+    "24-privacy": {
+      "figcraft_id": 31230,
+      "preview": "screens/07-profile-settings/24-privacy.png"
+    },
+    "25-notifications": {
+      "figcraft_id": 31270,
+      "preview": "screens/07-profile-settings/25-notifications.png"
+    },
+    "26-notification-edited": {
+      "figcraft_id": 31339,
+      "preview": "screens/07-profile-settings/26-notification-edited.png"
+    },
+    "27-notification-permission": {
+      "figcraft_id": 31408,
+      "preview": "screens/07-profile-settings/27-notification-permission.png"
+    },
+    "28-notification-off": {
+      "figcraft_id": 31492,
+      "preview": "screens/07-profile-settings/28-notification-off.png"
+    },
+    "34-device-settings": {
+      "figcraft_id": 31564,
+      "preview": "screens/07-profile-settings/34-device-settings.png"
+    },
+    "29-about": {
+      "figcraft_id": 31589,
+      "preview": "screens/07-profile-settings/29-about.png"
+    }
+  }
+}
