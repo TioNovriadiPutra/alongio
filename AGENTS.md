@@ -675,3 +675,97 @@ All changes to application code require manual implementation by the user.
 Do not interpret a request for coding advice as authorization to modify the project.
 
 The default behavior for any coding-related request is READ-ONLY CONSULTATION.
+
+## Alongio Motion Design
+
+- Use the [Soft Playful Motion specification](design/MOTION.md) and the `motion` namespace in the approved design token source.
+- Keep motion tied to feedback, orientation, or a meaningful milestone. Preserve layout, touch bounds, and readable final states.
+- Honor the platform's Reduce Motion preference. Keep the same information, state, focus, navigation, and actions. Use immediate state changes, brief fades where useful, and static equivalents such as a still final pose for celebrations. Provide accessible text or state cues for every meaningful outcome.
+- Prototype new motion in isolated FigCraft flows. Preserve approved screen layers, component masters, locks, and prototype bindings.
+- Verify saved bindings, actual presenter playback, compact and tall viewport behavior, and accessible final states. Report native gesture, OS preference, and on-device behavior separately.
+- React Native motion handoff is design guidance. Application implementation belongs to the owner.
+
+### Mandatory Motion Architecture
+
+- React Native Reanimated owns functional component motion. React Navigation owns screen and tab transitions and route history. Gorhom Bottom Sheet owns bottom-sheet presentation, dismissal, gestures, and snap points. Use the existing Soft Playful Motion tokens for this work.
+- Lottie is reserved for decorative loading, success, confetti, heart bursts, celebrations, and empty-state illustrations. Ordinary screen transitions, buttons, navigation, and other functional interactions belong to the functional stack. Decorative playback must never drive an action or delay its result.
+- Prefer existing free downloadable assets with verified permission for commercial mobile-app use. Apply the [Lottie asset policy](design/animations/README.md) before accepting an asset. Reject unknown or incompatible licenses, respect site restrictions, and obtain explicit approval for paid resources. Phase 11C does not authorize custom mascot animation.
+- FigCraft is the source for editable motion studies, prototype behavior, and measured visual verification. Use Taste for composition, hierarchy, pacing, and restraint within Alongio's approved identity. Website-specific entrances, hover effects, and loops from Taste do not become Alongio requirements.
+- Phase 11C is documentation-only and remains in DESIGN_ONLY. Phase 11B application-wide motion integration and Phase 12 Lottie research have not started. Each requires separate explicit owner authorization. Phase 11B also requires manual visual approval of the pilot work before rollout.
+
+## FigCraft Motion Verification Rules
+
+### User Visual Approval Is Mandatory
+
+Automated presenter validation does not replace manual visual approval.
+
+A prototype is not considered approved until the user has reviewed its rendered appearance and interactive behavior.
+
+### Three-Layer Quality Gate
+
+Every interactive motion prototype requires:
+
+1. Structural QA — Correct bindings, targets, and variants.
+2. Functional QA — Expected interactions produce correct results.
+3. Visual QA — Rendered appearance and motion are visually correct.
+
+Exercise triggers, dismissal, cancellation, repeated actions, interrupted transitions, and reduced-motion paths where applicable. Inspect actual rendered initial, intermediate, and final states at representative compact, standard, and tall sizes against approved geometry. Keep native-device verification separate from FigCraft evidence.
+
+All three gates must pass before an animation can be marked complete.
+
+### Evidence-Based Status
+
+Use PASS, FAIL, or NOT VERIFIED.
+
+Do not use PASS for untested or unsupported behavior.
+
+A successful interaction API call or navigation destination does not prove visual animation quality.
+
+When tools cannot inspect intermediate animation frames, report timing and transition smoothness as NOT VERIFIED.
+
+### Motion Review Board Standards
+
+Every motion review board must provide:
+
+- Clear section hierarchy.
+- Consistent alignment and spacing.
+- Identifiable demo entry frames.
+- Separated interactive previews and technical states.
+- No overlap or clipping.
+- Clear test instructions.
+- Responsive validation.
+
+### Preserve Approved Designs
+
+Motion-specific repairs may modify isolated pilot frames and documentation only.
+
+Changes to approved application frames require explicit user authorization.
+
+### Approval Before Rollout
+
+Do not expand motion to the application flows until the user explicitly approves the repaired pilot animations.
+
+## Pixel-Accurate Motion Prototyping Rule
+
+All motion prototype resting states must visually match their corresponding approved application frames.
+
+The approved application designs are the authoritative visual reference.
+
+Never manually approximate an approved layout when its original FigCraft geometry is available.
+
+When creating motion states:
+
+1. Duplicate or reuse approved geometry.
+2. Preserve layout, padding, spacing, typography, and component dimensions.
+3. Modify only the properties required for animation.
+4. Compare the rendered resting state with the approved baseline.
+5. Verify responsive behavior.
+6. Ensure animations introduce no unintended layout drift.
+
+A successful prototype interaction does not constitute visual approval.
+
+Every motion prototype requires structural, functional, and visual verification.
+
+Do not report pixel-perfect results without measured geometry or rendered comparison evidence.
+
+Do not proceed to the next phase without explicit user approval.

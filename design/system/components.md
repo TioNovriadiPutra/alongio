@@ -17,7 +17,7 @@ Commit, navigate or dismiss. Surface, centered label, optional icon or activity 
 | Quiet | Default | 350 × 56 | FC-7707 | r 24.0 / 8.0 |
 | Utility | Default | 156 × 48 | FC-31826 | r 16.0 / 8.0 |
 
-**Semantic color.** `action.primary.*, action.secondary.*, action.disabled.*, action.destructive.*`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
+**Approved colors.** Primary uses `ink` and `cream`. Pressed uses `indigo` and `ink`. Disabled uses `lavender` and `muted`. Destructive uses `pink` and `ink`. Secondary uses `ink` with its approved face treatment. **Typography.** typography.button.md, typography.body.md, typography.metadata.
 
 **Spacing and shape.** Use the specimen’s inspected values above. Use `layout.component-gap`, `layout.card-padding` or `layout.sheet-inset` where the corresponding anatomy applies.
 
@@ -37,7 +37,7 @@ Expose a single compact action. 48 px target, 24 px well, vector glyph.
 | Notifications | Default | 48 × 48 | FC-143 | r inherited / by anatomy |
 | Options | Default | 48 × 48 | FC-31834 | r 16.0 / 0.0 |
 
-**Semantic color.** `icon.primary, background.subtle`. **Typography.** No glyph text. Where a row label is present use typography.body.md..
+**Approved colors.** `ink`, `lavender`. **Typography.** No glyph text. Where a row label is present use typography.body.md..
 
 **Spacing and shape.** Use the specimen’s inspected values above. Use `layout.component-gap`, `layout.card-padding` or `layout.sheet-inset` where the corresponding anatomy applies.
 
@@ -55,7 +55,7 @@ Start a new task or entry. Floating or inset circular target and plus glyph.
 | --- | --- | --- | --- | --- |
 | Add task | Default | 48 × 48 | FC-1612 | r 24.0 / 0.0 |
 
-**Semantic color.** `module.planner.accent, icon.primary`. **Typography.** No glyph text. Where a row label is present use typography.body.md..
+**Approved colors.** `yellow`, `ink`. **Typography.** No glyph text. Where a row label is present use typography.body.md..
 
 **Spacing and shape.** Use the specimen’s inspected values above. Use `layout.component-gap`, `layout.card-padding` or `layout.sheet-inset` where the corresponding anatomy applies.
 
@@ -76,7 +76,7 @@ Enter a single-line value. Label, field boundary, value or placeholder, optional
 | Labeled | Focused | 350 × 80 | FC-33224 | r inherited / by anatomy |
 | Labeled | Error | 350 × 80 | FC-33231 | r inherited / by anatomy |
 
-**Semantic color.** `surface.default, border.default, border.focus, border.error, text.primary`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
+**Approved colors.** Use `cream` for the field, `ink` for the approved focused outline, `muted` for the quiet outline, and `pink` for error. **Typography.** typography.button.md, typography.body.md, typography.metadata.
 
 **Spacing and shape.** Use the specimen’s inspected values above. Use `layout.component-gap`, `layout.card-padding` or `layout.sheet-inset` where the corresponding anatomy applies.
 
@@ -97,7 +97,7 @@ Compose diary or Kitchen Magic text. Label, wrapping text body and field boundar
 | Kitchen | Focused | 350 × 88 | FC-20090 | r 16.0 / 4.0 |
 | Kitchen | Filled | 350 × 88 | FC-20092 | r 16.0 / 4.0 |
 
-**Semantic color.** `surface.default, border.default, text.primary`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
+**Approved colors.** `cream`, `ink`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
 
 **Spacing and shape.** Use the specimen’s inspected values above. Use `layout.component-gap`, `layout.card-padding` or `layout.sheet-inset` where the corresponding anatomy applies.
 
@@ -115,7 +115,7 @@ Find a recipe by query. Field boundary, leading search icon, query text.
 | --- | --- | --- | --- | --- |
 | Recipe search | Default | 350 × 60 | FC-13938 | r 16.0 / 12.0 |
 
-**Semantic color.** `surface.default, icon.primary, text.secondary`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
+**Approved colors.** `cream`, `ink`, `muted`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
 
 **Spacing and shape.** Use the specimen’s inspected values above. Use `layout.component-gap`, `layout.card-padding` or `layout.sheet-inset` where the corresponding anatomy applies.
 
@@ -134,7 +134,7 @@ Toggle Planner task completion. Outer hit target, state well and check indicator
 | Task | Unchecked | 48 × 48 | FC-1688 | r inherited / by anatomy |
 | Task | Checked | 48 × 48 | FC-2823 | r inherited / by anatomy |
 
-**Semantic color.** `module.planner.accent, border.default, icon.primary`. **Typography.** No glyph text. Where a row label is present use typography.body.md..
+**Approved colors.** `yellow`, `ink`. **Typography.** No glyph text. Where a row label is present use typography.body.md..
 
 **Spacing and shape.** Use the specimen’s inspected values above. Use `layout.component-gap`, `layout.card-padding` or `layout.sheet-inset` where the corresponding anatomy applies.
 
@@ -155,7 +155,7 @@ Make one choice in a related set. State ring, filled center and associated row l
 | Unselected | Full row | 350 × 76 | FC-34919 | r 16.0 / 12.0 |
 | Selected | Full row | 350 × 76 | FC-34929 | r 16.0 / 12.0 |
 
-**Semantic color.** `border.default, module.diary.accent, icon.primary`. **Typography.** No glyph text. Where a row label is present use typography.body.md..
+**Approved colors.** `ink`, `pink`. **Typography.** No glyph text. Where a row label is present use typography.body.md..
 
 **Spacing and shape.** Use the specimen’s inspected values above. Use `layout.component-gap`, `layout.card-padding` or `layout.sheet-inset` where the corresponding anatomy applies.
 
@@ -175,7 +175,7 @@ Change a notification preference. Label, icon well, track and thumb.
 | Preferences | Off | 350 × 60 | FC-37671 | r 16.0 / 12.0 |
 | Preferences | Unavailable | 350 × 60 | FC-37679 | r 16.0 / 12.0 |
 
-**Semantic color.** `feedback.success, action.disabled.background, icon.primary`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
+**Approved colors.** `green`, `lavender`, `ink`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
 
 **Spacing and shape.** Use the specimen’s inspected values above. Use `layout.component-gap`, `layout.card-padding` or `layout.sheet-inset` where the corresponding anatomy applies.
 
@@ -195,7 +195,7 @@ Open a bounded choice. Value, purpose label or icon, direction affordance.
 | Meal type | Default | 350 × 60 | FC-13928 | r 16.0 / 12.0 |
 | Access | Default | 350 × 60 | FC-13933 | r 16.0 / 12.0 |
 
-**Semantic color.** `surface.card, icon.primary, text.primary`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
+**Approved colors.** `cream`, `ink`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
 
 **Spacing and shape.** Use the specimen’s inspected values above. Use `layout.component-gap`, `layout.card-padding` or `layout.sheet-inset` where the corresponding anatomy applies.
 
@@ -216,7 +216,7 @@ Choose an ingredient or a day. Label, optional category glyph and compact select
 | Weekday | Selected | 48 × 48 | FC-7473 | r 16.0 / 0.0 |
 | Day | Today | 50 × 48 | FC-1529 | r inherited / by anatomy |
 
-**Semantic color.** `module.kitchen.accent, module.planner.accent, text.primary`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
+**Approved colors.** `green`, `yellow`, `ink`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
 
 **Spacing and shape.** Use the specimen’s inspected values above. Use `layout.component-gap`, `layout.card-padding` or `layout.sheet-inset` where the corresponding anatomy applies.
 
@@ -237,7 +237,7 @@ Group content or open a feature. Rounded surface, content slot, optional artwork
 | Home | Kitchen launcher | 173 × 149 | FC-84 | r inherited / by anatomy |
 | Profile | Identity | 350 × 180 | FC-29231 | r 24.0 / 0.0 |
 
-**Semantic color.** `surface.card, module.*.accent, text.primary`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
+**Approved colors.** `cream`, the approved module accent, `ink`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
 
 **Spacing and shape.** Use the specimen’s inspected values above. Use `layout.component-gap`, `layout.card-padding` or `layout.sheet-inset` where the corresponding anatomy applies.
 
@@ -255,7 +255,7 @@ Display a blocking foreground layer. Screen-sized dimmed underlay and a focus-tr
 | --- | --- | --- | --- | --- |
 | Permission | Visible | 390 × 844 | FC-32859 | r inherited / 0.0 |
 
-**Semantic color.** `surface.elevated, text.primary; scrim treatment by fixture`. **Typography.** typography.heading.lg, typography.body.md.
+**Approved colors.** `cream`, `ink`. Scrim opacity follows the approved fixture. **Typography.** typography.heading.lg, typography.body.md.
 
 **Spacing and shape.** Use the specimen’s inspected values above. Use `layout.component-gap`, `layout.card-padding` or `layout.sheet-inset` where the corresponding anatomy applies.
 
@@ -274,7 +274,7 @@ Present choices with a reachable footer. Handle, header, close target, scrolling
 | Photo options | Visible | 390 × 380 | FC-12011 | r 24.0 / 0.0 |
 | Permission | Visible | 390 × 352 | FC-32956 | r 24.0 / 0.0 |
 
-**Semantic color.** `surface.elevated, text.primary`. **Typography.** typography.heading.lg, typography.body.md.
+**Approved colors.** `cream`, `ink`. **Typography.** typography.heading.lg, typography.body.md.
 
 **Spacing and shape.** Use the specimen’s inspected values above. Use `layout.component-gap`, `layout.card-padding` or `layout.sheet-inset` where the corresponding anatomy applies.
 
@@ -292,7 +292,7 @@ Confirm a consequential decision. Title, consequences, primary and cancel action
 | --- | --- | --- | --- | --- |
 | Disconnect | Visible | 390 × 352 | FC-24964 | r 24.0 / 0.0 |
 
-**Semantic color.** `surface.elevated, action.destructive.*, action.secondary.*`. **Typography.** typography.heading.lg, typography.body.md.
+**Approved colors.** `cream`, `pink`, `ink`. **Typography.** typography.heading.lg, typography.body.md.
 
 **Spacing and shape.** Use the specimen’s inspected values above. Use `layout.component-gap`, `layout.card-padding` or `layout.sheet-inset` where the corresponding anatomy applies.
 
@@ -315,7 +315,7 @@ Switch root destinations. Ink dock, equal tabs, vector icons, labels and selecte
 | Diary destination | Shared dock | 370 × 68 | FC-34850 | r inherited / 0.5 |
 | Kitchen destination | Shared dock | 370 × 68 | FC-35516 | r inherited / 0.5 |
 
-**Semantic color.** `navigation.*`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
+**Approved colors.** `ink`, `yellow`, `cream`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
 
 **Spacing and shape.** Use the specimen’s inspected values above. Use `layout.component-gap`, `layout.card-padding` or `layout.sheet-inset` where the corresponding anatomy applies.
 
@@ -334,7 +334,7 @@ Orient the current route. Back or leading icon, screen title, optional action.
 | Little Updates | Default | 350 × 48 | FC-31905 | r 16.0 / 16.0 |
 | Kitchen | Default | 350 × 48 | FC-20199 | r 16.0 / 16.0 |
 
-**Semantic color.** `surface.default, text.primary, icon.primary`. **Typography.** typography.heading.lg, typography.body.md.
+**Approved colors.** `cream`, `ink`. **Typography.** typography.heading.lg, typography.body.md.
 
 **Spacing and shape.** Use the specimen’s inspected values above. Use `layout.component-gap`, `layout.card-padding` or `layout.sheet-inset` where the corresponding anatomy applies.
 
@@ -352,7 +352,7 @@ Return to the approved caller. 48 px target and centered arrow.
 | --- | --- | --- | --- | --- |
 | Back | Default | 48 × 48 | FC-241 | r 24.0 / by anatomy |
 
-**Semantic color.** `background.subtle, icon.primary`. **Typography.** No glyph text. Where a row label is present use typography.body.md..
+**Approved colors.** `lavender`, `ink`. **Typography.** No glyph text. Where a row label is present use typography.body.md..
 
 **Spacing and shape.** Use the specimen’s inspected values above. Use `layout.component-gap`, `layout.card-padding` or `layout.sheet-inset` where the corresponding anatomy applies.
 
@@ -373,7 +373,7 @@ Switch peer views in a module. Equal targets, selection visual and labels.
 | Planner | Calendar active | 350 × 56 | FC-33509 | r 18.0 / 0.0 |
 | Planner | Routines active | 350 × 56 | FC-33526 | r 18.0 / 0.0 |
 
-**Semantic color.** `module.planner.accent, text.primary`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
+**Approved colors.** `yellow`, `ink`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
 
 **Spacing and shape.** Use the specimen’s inspected values above. Use `layout.component-gap`, `layout.card-padding` or `layout.sheet-inset` where the corresponding anatomy applies.
 
@@ -394,7 +394,7 @@ Switch ownership or scope. Container, segment buttons and selected surface.
 | Kitchen | Personal | 350 × 56 | FC-13805 | r 20.0 / 4.0 |
 | Kitchen | Shared | 350 × 56 | FC-13814 | r 20.0 / 4.0 |
 
-**Semantic color.** `module.diary.accent, module.kitchen.accent, text.primary`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
+**Approved colors.** `pink`, `green`, `ink`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
 
 **Spacing and shape.** Use the specimen’s inspected values above. Use `layout.component-gap`, `layout.card-padding` or `layout.sheet-inset` where the corresponding anatomy applies.
 
@@ -413,7 +413,7 @@ Show count or status at a glance. Compact surface and single text or symbol.
 | Unread count | Active | 32 × 32 | FC-31915 | r 12.0 / 0.0 |
 | Category | Planner | 42 × 42 | FC-38132 | r 12.0 / 0.0 |
 
-**Semantic color.** `module.*.accent, text.primary`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
+**Approved colors.** the approved module accent, `ink`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
 
 **Spacing and shape.** Use the specimen’s inspected values above. Use `layout.component-gap`, `layout.card-padding` or `layout.sheet-inset` where the corresponding anatomy applies.
 
@@ -432,7 +432,7 @@ Confirm completion with an optional Undo. Status surface, text and optional acti
 | Planner status banner | Success | 350 × 64 | FC-2838 | r 16.0 / 8.0 |
 | Profile notice | Good | 350 × 64 | FC-25394 | r 16.0 / 12.0 |
 
-**Semantic color.** `feedback.success, text.primary`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
+**Approved colors.** `green`, `ink`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
 
 **Spacing and shape.** Use the specimen’s inspected values above. Use `layout.component-gap`, `layout.card-padding` or `layout.sheet-inset` where the corresponding anatomy applies.
 
@@ -452,7 +452,7 @@ Communicate pending work. Activity indicator, loading action or skeleton card.
 | Notification | Skeleton | 350 × 92 | FC-38287 | r 16.0 / 12.0 |
 | Kitchen | Loading | 350 × 60 | FC-35622 | r 16.0 / 12.0 |
 
-**Semantic color.** `feedback.info, action.primary.*`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
+**Approved colors.** `lavender`, `ink`, `cream`, `indigo`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
 
 **Spacing and shape.** Use the specimen’s inspected values above. Use `layout.component-gap`, `layout.card-padding` or `layout.sheet-inset` where the corresponding anatomy applies.
 
@@ -471,7 +471,7 @@ Explain an empty view and offer an action. Editable art, title, supporting copy 
 | Little Updates | Empty | 350 × 275 | FC-32764 | r 16.0 / 16.0 |
 | Little Updates | Back action | 350 × 56 | FC-265 | r 28.0 / 8.0 |
 
-**Semantic color.** `surface.default, feedback.info, text.primary`. **Typography.** typography.heading.lg, typography.body.md.
+**Approved colors.** `cream`, `lavender`, `ink`. **Typography.** typography.heading.lg, typography.body.md.
 
 **Spacing and shape.** Use the specimen’s inspected values above. Use `layout.component-gap`, `layout.card-padding` or `layout.sheet-inset` where the corresponding anatomy applies.
 
@@ -491,7 +491,7 @@ Explain a problem and expose recovery. Tone, icon, message and optional retry.
 | Kitchen | Error | 350 × 60 | FC-35627 | r 16.0 / 12.0 |
 | Little Updates | Retry state art and copy | 350 × 256 | FC-32842 | r 16.0 / 16.0 |
 
-**Semantic color.** `feedback.error, text.primary`. **Typography.** typography.heading.lg, typography.body.md.
+**Approved colors.** `pink`, `ink`. **Typography.** typography.heading.lg, typography.body.md.
 
 **Spacing and shape.** Use the specimen’s inspected values above. Use `layout.component-gap`, `layout.card-padding` or `layout.sheet-inset` where the corresponding anatomy applies.
 
@@ -511,7 +511,7 @@ Confirm progress or an action. Status surface, short copy and optional continuat
 | Kitchen | Success | 350 × 60 | FC-35632 | r 16.0 / 12.0 |
 | Profile | Success | 350 × 64 | FC-25394 | r 16.0 / 12.0 |
 
-**Semantic color.** `feedback.success, text.primary`. **Typography.** typography.heading.lg, typography.body.md.
+**Approved colors.** `green`, `ink`. **Typography.** typography.heading.lg, typography.body.md.
 
 **Spacing and shape.** Use the specimen’s inspected values above. Use `layout.component-gap`, `layout.card-padding` or `layout.sheet-inset` where the corresponding anatomy applies.
 
@@ -530,7 +530,7 @@ Read or complete a plan. Task text, category, status and separate completion tar
 | Personal | Open | 350 × 68 | FC-1541 | r inherited / by anatomy |
 | Personal | Complete | 350 × 68 | FC-1549 | r inherited / by anatomy |
 
-**Semantic color.** `module.planner.*, text.primary`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
+**Approved colors.** `yellow`, `ink`, `green`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
 
 **Spacing and shape.** Use the specimen’s inspected values above. Use `layout.component-gap`, `layout.card-padding` or `layout.sheet-inset` where the corresponding anatomy applies.
 
@@ -551,7 +551,7 @@ Review recurring work and ownership. Title, schedule, ownership and progress or 
 | Shared | Due | 350 × 64 | FC-4043 | r 16.0 / by anatomy |
 | Shared | Checked in | 350 × 64 | FC-4054 | r 16.0 / by anatomy |
 
-**Semantic color.** `module.planner.*, feedback.success, text.primary`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
+**Approved colors.** `yellow`, `ink`, `green`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
 
 **Spacing and shape.** Use the specimen’s inspected values above. Use `layout.component-gap`, `layout.card-padding` or `layout.sheet-inset` where the corresponding anatomy applies.
 
@@ -570,7 +570,7 @@ Preview an eligible journal memory. Date component, title and metadata, optional
 | Private memory | Default | 350 × 96 | FC-34871 | r 20.0 / 12.0 |
 | Shared memory | Default | 350 × 96 | FC-34881 | r 20.0 / 12.0 |
 
-**Semantic color.** `module.diary.*, text.primary`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
+**Approved colors.** `pink`, `ink`, `lavender`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
 
 **Spacing and shape.** Use the specimen’s inspected values above. Use `layout.component-gap`, `layout.card-padding` or `layout.sheet-inset` where the corresponding anatomy applies.
 
@@ -597,7 +597,7 @@ Choose a diary mood. Illustrated glyph, visible state and label.
 | Restless | Unselected | 62 × 84 | FC-7922 | r 16.0 / 4.0 |
 | Restless | Selected | 62 × 84 | FC-7929 | r 16.0 / 4.0 |
 
-**Semantic color.** `module.diary.*, text.primary`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
+**Approved colors.** `pink`, `ink`, `lavender`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
 
 **Spacing and shape.** Use the specimen’s inspected values above. Use `layout.component-gap`, `layout.card-padding` or `layout.sheet-inset` where the corresponding anatomy applies.
 
@@ -617,7 +617,7 @@ Preview and open a recipe. Vector plate, title and recipe metadata.
 | Toast | Default | 169 × 184 | FC-35555 | r 20.0 / 4.0 |
 | Peach | Default | 169 × 184 | FC-35568 | r 20.0 / 4.0 |
 
-**Semantic color.** `module.kitchen.*, text.primary`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
+**Approved colors.** `green`, `ink`, `yellow`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
 
 **Spacing and shape.** Use the specimen’s inspected values above. Use `layout.component-gap`, `layout.card-padding` or `layout.sheet-inset` where the corresponding anatomy applies.
 
@@ -638,7 +638,7 @@ Capture a recipe request. Multiline prompt, attachment actions and optional prom
 | Attachment | Preview | 108 × 104 | FC-20095 | r 12.0 / 0.0 |
 | Attachment | Retry | 169 × 48 | FC-20083 | r 16.0 / 8.0 |
 
-**Semantic color.** `module.kitchen.*, surface.default, text.primary`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
+**Approved colors.** `green`, `ink`, `yellow`, `cream`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
 
 **Spacing and shape.** Use the specimen’s inspected values above. Use `layout.component-gap`, `layout.card-padding` or `layout.sheet-inset` where the corresponding anatomy applies.
 
@@ -667,7 +667,7 @@ Open or manage an update. Category badge, copy column, timestamp and state rail.
 | Growth | Read | 350 × 92 | FC-38184 | r 16.0 / 4.0 |
 | Account | Read | 350 × 92 | FC-38274 | r 16.0 / 4.0 |
 
-**Semantic color.** `module.updates.*, module.*.accent, text.primary`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
+**Approved colors.** `lavender`, `ink`, `cream`, the approved module accent. **Typography.** typography.button.md, typography.body.md, typography.metadata.
 
 **Spacing and shape.** Use the specimen’s inspected values above. Use `layout.component-gap`, `layout.card-padding` or `layout.sheet-inset` where the corresponding anatomy applies.
 
@@ -688,7 +688,7 @@ Indicate connection status and next action. Status icon, title, explanation and 
 | Status | Waiting | 350 × 64 | FC-37269 | r 16.0 / 12.0 |
 | Status | Error | 350 × 64 | FC-37274 | r 16.0 / 12.0 |
 
-**Semantic color.** `module.couple.*, feedback.error, text.primary`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
+**Approved colors.** `pink`, `ink`, `indigo`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
 
 **Spacing and shape.** Use the specimen’s inspected values above. Use `layout.component-gap`, `layout.card-padding` or `layout.sheet-inset` where the corresponding anatomy applies.
 
@@ -708,7 +708,7 @@ Show monthly shared progress. Level, current and goal copy, decorative progress 
 | Shared | Monthly progress | 350 × 116 | FC-7476 | r 20.0 / 8.0 |
 | Personal | Monthly progress | 350 × 116 | FC-7483 | r 20.0 / 8.0 |
 
-**Semantic color.** `feedback.success, text.primary`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
+**Approved colors.** `green`, `ink`. **Typography.** typography.button.md, typography.body.md, typography.metadata.
 
 **Spacing and shape.** Use the specimen’s inspected values above. Use `layout.component-gap`, `layout.card-padding` or `layout.sheet-inset` where the corresponding anatomy applies.
 

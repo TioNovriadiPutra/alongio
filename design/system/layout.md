@@ -8,12 +8,12 @@ Alongio uses a 4 px design rhythm. Reference frame is 390 × 844. Pixel values a
 
 | Layout role | Logical px |
 | --- | --- |
-| screen-inset | 20 |
-| section-gap | 24 |
-| component-gap | 12 |
-| card-padding | 12 |
-| sheet-inset | 20 |
-| dock-gap | 4 |
+| `layout.screen-inset` | 20 |
+| `layout.section-gap` | 24 |
+| `layout.component-gap` | 12 |
+| `layout.card-padding` | 12 |
+| `layout.sheet-inset` | 20 |
+| `layout.dock-gap` | 4 |
 
 | Size role | Logical px |
 | --- | --- |

@@ -1,6 +1,6 @@
 # Typography
 
-Use [Space Grotesk](../fonts/SpaceGrotesk.ttf) for display and headings and [DM Sans](../fonts/DMSans.ttf) for most interface copy. The licensed fonts and accompanying license files are in `design/fonts/`. The native specimen board applies the exact family, style, size, leading and tracking shown below.
+Use Space Grotesk for display and headings and DM Sans for most interface copy. The licensed fonts and accompanying license files are in `design/fonts/`. The native specimen board applies the exact family, style, size, leading and tracking shown below. FigCraft exposes the verified font family and size as separate field references. The composite role remains in the registry. [Space Grotesk](../fonts/SpaceGrotesk.ttf) · [DM Sans](../fonts/DMSans.ttf)
 
 | Role | Family and weight | Size / line height | Tracking | Role and wrapping | Live evidence |
 | --- | --- | --- | --- | --- | --- |

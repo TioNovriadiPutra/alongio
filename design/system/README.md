@@ -4,34 +4,40 @@ The editable **00 — Alongio Design System** page lives inside the [FigCraft ma
 
 ## Use the library
 
-1. Choose a semantic role. Inspect its selected color and state in the collection.
-2. Choose an existing component or variant by anatomy, size and state. Use module aliases for accent changes.
+1. Inspect the component’s Fill or Stroke variable. **02 — Color Palette** shows the same name, resolved HEX, and native ID. **17 — Token inspector** covers sizing, typography, spacing, radius, and motion.
+2. Choose an existing component or variant by anatomy, size and state. Use the module’s approved palette colors for accents.
 3. Review its viewport behavior, text sizing and accessibility contract.
 4. Resolve open decisions with the owner before promoting any proposed tokens or states.
 
 | Reference | Contents |
 | --- | --- |
-| [Colors](colors.md) | Primitive colors, semantic aliases, module roles and contrast |
+| [Colors](colors.md) | Palette names, approved uses, and contrast |
+| [Palette mapping](color-palette-mapping.md) | Exact names, native IDs, HEX values, and deprecated aliases |
+| [Palette audit](color-palette-audit.md) | Binding validation and visual regression |
 | [Typography](typography.md) | Approved fonts, role specimens and text behavior |
 | [Layout](layout.md) | Spacing, sizing, radius, borders and adaptive layout |
 | [Components](components.md) | Anatomy, variants, states, sizes and API suggestions |
 | [Assets](assets.md) | Vector source IDs, exports and tinting rules |
 | [React Native mapping](react-native-mapping.md) | Manual implementation guidance |
-| [Token source](tokens.json) | Typed tokens, alias graph and unresolved roles |
+| [Token source](tokens.json) | Typed palette, typography, geometry, and motion tokens |
+| [Earlier token audit](token-audit.md) | Historical native collections, hardcoded properties, aliases, and exceptions |
+| [Earlier token mapping](token-mapping.md) | Historical names and non-color migration details |
+| [Earlier component binding audit](component-binding-audit.md) | Historical properties and instance inheritance by family |
+| [Earlier migration report](migration-report.md) | Historical T1–T12 validation results |
 | [Quality audit](design-system-audit.md) | Native and visual verification |
 | [Review boards](../screens/design-system/) | Section-by-section PNG exports |
 
-The FigCraft page has 16 sections, from Design Principles through React Native Implementation Mapping. The curated masters in the existing Components page and the approved module-local masters remain available. Specimen cards on the new page identify their source by FC ID. Use the new library to find the right contract before looking up an approved production example in the [screen inventory](../handoff/screen-inventory.md).
+The FigCraft page has 17 sections. The Token inspector follows React Native Implementation Mapping. Existing specimen cards identify their source by FC ID. Use the library to find the component contract, then look up an approved production example in the [screen inventory](../handoff/screen-inventory.md).
 
-The semantic-to-primitive and variant organization follows the general approach in [shadcn/ui theming](https://ui.shadcn.com/docs/theming) and [button documentation](https://ui.shadcn.com/docs/components/button). Alongio owns the visual rules. Token serialization follows the [Design Tokens Format Module](https://www.designtokens.org/TR/2025.10/format/) typed token and alias patterns. The project validates local references and units independently.
+The color registry follows the names and values in Alongio’s approved FigCraft palette. The registry uses typed values and aliases for supported non-color tokens. [Design Tokens Format Module](https://www.designtokens.org/TR/2025.10/format/)
 
 ## Full-size review boards
 
 [Overview index](../screens/design-system/00-review-index.png)
 
 - [01 — Design Principles](../screens/design-system/01-principles.png)
-- [02 — Primitive Color Palette](../screens/design-system/02-primitive-colors.png)
-- [03 — Semantic Color Tokens](../screens/design-system/03-semantic-colors.png)
+- [02 — Color Palette](../screens/design-system/02-primitive-colors.png)
+- [03 — Deprecated Color Aliases](../screens/design-system/03-semantic-colors.png)
 - [04 — Typography](../screens/design-system/04-typography.png)
 - [05 — Spacing & Layout](../screens/design-system/05-spacing-layout.png)
 - [06 — Radius, Borders & Shadows](../screens/design-system/06-radius-borders-shadows.png)
@@ -45,3 +51,4 @@ The semantic-to-primitive and variant organization follows the general approach 
 - [14 — Responsive Layout Patterns](../screens/design-system/14-responsive-patterns.png)
 - [15 — Accessibility & Interaction](../screens/design-system/15-accessibility.png)
 - [16 — React Native Implementation Mapping](../screens/design-system/16-react-native-mapping.png)
+- [17 — Token inspector](../screens/design-system/17-token-inspector.png)

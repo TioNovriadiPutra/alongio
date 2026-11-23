@@ -1,0 +1,220 @@
+{
+  "phase": "12A.2",
+  "projectMode": "DESIGN_ONLY",
+  "date": "2026-11-23",
+  "status": "BLOCKED_NOT_ACQUIRED",
+  "blockedReason": "The owner reported that the LottieFiles free download limit blocked acquisition. Phase 12B does not require these files.",
+  "assetDirectory": "lottie",
+  "assets": [],
+  "license": {
+    "name": "Lottie Simple License",
+    "version": "FL 9.13.21",
+    "url": "https://lottiefiles.com/page/license",
+    "verification": "LISTING_VERIFIED",
+    "commercialAppUse": true,
+    "creatorCredit": "Optional and encouraged",
+    "distributionObligations": "Include the same license terms with the asset or derivative. Do not add terms or technical restrictions that limit the licensed rights."
+  },
+  "pendingAcquisition": [
+    {
+      "id": "app-loading",
+      "category": "App Loading",
+      "title": "loading - Heart",
+      "author": "Anna Jang",
+      "sourceUrl": "https://lottiefiles.com/free-animation/loading-heart-OO64RGPsvu",
+      "intendedFilename": "app-loading.json",
+      "localPath": null,
+      "downloadStatus": "BLOCKED_NOT_ACQUIRED",
+      "listedStandardJsonKb": 8.7,
+      "license": "Lottie Simple License (FL 9.13.21)",
+      "intendedPlayback": "loop",
+      "approvedFrameIds": [
+        1163
+      ],
+      "reducedMotionFallback": "Existing loading text and a static heart or indicator.",
+      "file": {
+        "sizeBytes": null,
+        "sha256": null,
+        "width": null,
+        "height": null,
+        "frameRate": null,
+        "inPoint": null,
+        "outPoint": null,
+        "frameCount": null,
+        "durationSeconds": null,
+        "externalDependencies": null,
+        "featureFlags": null
+      },
+      "validation": {
+        "syntax": "NOT VERIFIED",
+        "structure": "NOT VERIFIED",
+        "transparency": "NOT VERIFIED",
+        "playbackMode": "NOT VERIFIED",
+        "visual": "NOT VERIFIED",
+        "reactNativeIos": "NOT VERIFIED",
+        "reactNativeAndroid": "NOT VERIFIED"
+      }
+    },
+    {
+      "id": "task-success",
+      "category": "Task Completion",
+      "title": "Success",
+      "author": "Rafly Nurfallah",
+      "sourceUrl": "https://lottiefiles.com/free-animation/success-animation-tkSmff4Qcn",
+      "intendedFilename": "task-success.json",
+      "localPath": null,
+      "downloadStatus": "BLOCKED_NOT_ACQUIRED",
+      "listedStandardJsonKb": 11.3,
+      "license": "Lottie Simple License (FL 9.13.21)",
+      "intendedPlayback": "one-shot",
+      "approvedFrameIds": [
+        2736
+      ],
+      "reducedMotionFallback": "Existing checked control and Task completed banner with Undo.",
+      "file": {
+        "sizeBytes": null,
+        "sha256": null,
+        "width": null,
+        "height": null,
+        "frameRate": null,
+        "inPoint": null,
+        "outPoint": null,
+        "frameCount": null,
+        "durationSeconds": null,
+        "externalDependencies": null,
+        "featureFlags": null
+      },
+      "validation": {
+        "syntax": "NOT VERIFIED",
+        "structure": "NOT VERIFIED",
+        "transparency": "NOT VERIFIED",
+        "playbackMode": "NOT VERIFIED",
+        "visual": "NOT VERIFIED",
+        "reactNativeIos": "NOT VERIFIED",
+        "reactNativeAndroid": "NOT VERIFIED"
+      }
+    },
+    {
+      "id": "celebration-confetti",
+      "category": "Celebration",
+      "title": "Party Pastel Confetti",
+      "author": "Kawaiicolors",
+      "sourceUrl": "https://lottiefiles.com/free-animation/party-pastel-confetti-FPl4hTEDBO",
+      "intendedFilename": "celebration-confetti.json",
+      "localPath": null,
+      "downloadStatus": "BLOCKED_NOT_ACQUIRED",
+      "listedStandardJsonKb": 63.1,
+      "license": "Lottie Simple License (FL 9.13.21)",
+      "intendedPlayback": "one-shot",
+      "approvedFrameIds": [
+        5388,
+        24808
+      ],
+      "reducedMotionFallback": "Approved milestone or paired artwork and confirmation text.",
+      "file": {
+        "sizeBytes": null,
+        "sha256": null,
+        "width": null,
+        "height": null,
+        "frameRate": null,
+        "inPoint": null,
+        "outPoint": null,
+        "frameCount": null,
+        "durationSeconds": null,
+        "externalDependencies": null,
+        "featureFlags": null
+      },
+      "validation": {
+        "syntax": "NOT VERIFIED",
+        "structure": "NOT VERIFIED",
+        "transparency": "NOT VERIFIED",
+        "playbackMode": "NOT VERIFIED",
+        "visual": "NOT VERIFIED",
+        "reactNativeIos": "NOT VERIFIED",
+        "reactNativeAndroid": "NOT VERIFIED"
+      }
+    },
+    {
+      "id": "save-success",
+      "category": "Save Success",
+      "title": "Heart burst animation",
+      "author": "Nick Hart",
+      "sourceUrl": "https://lottiefiles.com/free-animation/heart-burst-animation-elVuZR5fvz",
+      "intendedFilename": "save-success.json",
+      "localPath": null,
+      "downloadStatus": "BLOCKED_NOT_ACQUIRED",
+      "listedStandardJsonKb": 3.8,
+      "license": "Lottie Simple License (FL 9.13.21)",
+      "intendedPlayback": "one-shot",
+      "approvedFrameIds": [
+        16203
+      ],
+      "reducedMotionFallback": "Existing filled bookmark and saved label.",
+      "file": {
+        "sizeBytes": null,
+        "sha256": null,
+        "width": null,
+        "height": null,
+        "frameRate": null,
+        "inPoint": null,
+        "outPoint": null,
+        "frameCount": null,
+        "durationSeconds": null,
+        "externalDependencies": null,
+        "featureFlags": null
+      },
+      "validation": {
+        "syntax": "NOT VERIFIED",
+        "structure": "NOT VERIFIED",
+        "transparency": "NOT VERIFIED",
+        "playbackMode": "NOT VERIFIED",
+        "visual": "NOT VERIFIED",
+        "reactNativeIos": "NOT VERIFIED",
+        "reactNativeAndroid": "NOT VERIFIED"
+      }
+    },
+    {
+      "id": "kitchen-loading",
+      "category": "Kitchen Loading",
+      "title": "Boiling Pot",
+      "author": "Joshua Trimmer",
+      "sourceUrl": "https://lottiefiles.com/free-animation/boiling-pot-tLTsKQiX1e",
+      "intendedFilename": "kitchen-loading.json",
+      "localPath": null,
+      "downloadStatus": "BLOCKED_NOT_ACQUIRED",
+      "listedStandardJsonKb": 15.6,
+      "license": "Lottie Simple License (FL 9.13.21)",
+      "intendedPlayback": "loop",
+      "approvedFrameIds": [
+        21854
+      ],
+      "reducedMotionFallback": "Approved Kitchen Magic food illustration and progress copy.",
+      "file": {
+        "sizeBytes": null,
+        "sha256": null,
+        "width": null,
+        "height": null,
+        "frameRate": null,
+        "inPoint": null,
+        "outPoint": null,
+        "frameCount": null,
+        "durationSeconds": null,
+        "externalDependencies": null,
+        "featureFlags": null
+      },
+      "validation": {
+        "syntax": "NOT VERIFIED",
+        "structure": "NOT VERIFIED",
+        "transparency": "NOT VERIFIED",
+        "playbackMode": "NOT VERIFIED",
+        "visual": "NOT VERIFIED",
+        "reactNativeIos": "NOT VERIFIED",
+        "reactNativeAndroid": "NOT VERIFIED"
+      }
+    }
+  ],
+  "deferred": [
+    "Empty State"
+  ],
+  "rejected": []
+}

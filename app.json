@@ -31,7 +31,14 @@
           "imageWidth": 390,
           "resizeMode": "contain"
         }
-      ]
-    ]
+      ],
+      "expo-image",
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "da01dbc8-126a-4769-930a-33936279ab30"
+      }
+    }
   }
 }

@@ -4,14 +4,14 @@ The owner implements application code. The examples here describe a manual desig
 
 ## Token resolution
 
-Read the typed values in `tokens.json`. Resolve color aliases from semantic path to a primitive once in the theme. Resolve dimensional aliases to logical React Native layout values. Preserve native font weight, measure and line-height behavior from the text roles. For composite typography, convert the line-height multiplier to an absolute logical line height. For a role marked Auto, use the loaded font’s metrics. Keep proposed roles outside production theme resolution until approved.
+Read the typed values in `tokens.json`. Use the palette key directly for colors, such as `ink`, `cream`, or `muted`. The registry stores these under `palette`. Resolve dimensions such as `layout.screen-inset` and `size.button.md` to logical React Native units. Keep local approved values for documented exceptions. For composite typography, convert the line-height multiplier to an absolute logical line height. For Auto line height, use the loaded font’s metrics. [Palette mapping](color-palette-mapping.md)
 
 Use a shared theme surface for colors, typography, spacing, sizing, radius, borders and shadows. Keep visual families grouped into text, actions, inputs, surfaces, navigation, feedback and module components. Route trees, draft IDs, access checks and notification state stay in separate product-layer contracts.
 
 ## Suggested usage
 
 ```tsx
-<AppText variant="heading.md" color="text.primary">
+<AppText variant="typography.heading.md" color="ink">
   Little Updates
 </AppText>
 
@@ -19,12 +19,12 @@ Use a shared theme surface for colors, typography, spacing, sizing, radius, bord
   Continue
 </AppButton>
 
-<AppSurface background="surface.card" radius="lg">
+<AppSurface background="cream" radius="radius.lg">
   {children}
 </AppSurface>
 ```
 
-Example props express intent. Keep visual variant, size and interaction state as separate fields. A module tone should resolve through the module alias in a shared layout contract. Preserve focus, loading, disabled and selected semantics in the runtime component. Consult [component specifications](components.md) for family-level props.
+Example props express intent. Keep visual variant, size and interaction state as separate fields. Use the approved palette color for each module tone. Preserve focus, loading, disabled and selected semantics in the runtime component. Consult [component specifications](components.md) for family-level props.
 
 ## Layout and platforms
 

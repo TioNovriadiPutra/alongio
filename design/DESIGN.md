@@ -68,6 +68,8 @@ Prefer solid color blocks over gradients.
 
 Use dark ink for typography and important interactive elements.
 
+Use the exact names from the **Alongio / Palette** collection for component colors. In the [token registry](system/tokens.json), those same names are keys under `palette`. Inspect the component’s Fill or Stroke reference in FigCraft and look up its HEX value on **02 — Color Palette**. [Palette mapping](system/color-palette-mapping.md)
+
 ## 6. Typography
 
 Primary display font: Space Grotesk.
@@ -79,6 +81,8 @@ Use bold, expressive headings and readable body text.
 Typography should feel editorial, geometric, friendly, and confident.
 
 Avoid corporate typography and excessively decorative fonts.
+
+Use the documented `typography.*` roles for new work. Preserve approved local text styles when their font metrics differ from the nearest registry role. [Typography reference](system/typography.md)
 
 ## 7. Layout Direction
 
@@ -268,6 +272,8 @@ Design relevant component and screen states:
 - Empty
 - Error
 - Success
+
+Apply [Soft Playful Motion](MOTION.md) to make these states easier to understand. Preserve approved resting geometry, typography, artwork, and touch targets. Functional motion follows the native UI architecture. Expressive effects are optional and have a readable reduced-motion alternative.
 
 ### Layout Requirements
 

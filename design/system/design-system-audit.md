@@ -15,18 +15,18 @@
 
 Counts apply to the new page. Source styling, viewport specimens and native variant controls were inspected in FigCraft. Platform semantics and physical behavior remain device tests.
 
-| Criterion | Inspection and evidence | Violations remaining | Result |
-| --- | --- | ---: | --- |
-| A1 Spacing | Sixteen board grids and shared specimen cards checked for consistent 16–24 px card insets and separation. Source-component spacing is preserved and documented by family. | 0 | PASS |
-| A2 Icon centering | 187 native centering comparisons for visible centered wells and badges. Geometry was within 1 px for covered icons. | 0 | PASS |
-| A3 Button composition | 16 center checks on authored action specimens. Combined label and icon geometry stayed within tolerance. | 0 | PASS |
-| A4 Text sizing | 1,342 text layers use height or width-and-height resizing. The numeric specimen was corrected to the approved Calendar size and type. | 0 | PASS |
-| A5 Component consistency | 168 specimens measured against sources, using explicit exceptions for resized button examples and viewport references. The 35 contracts specify size and state separately. | 0 | PASS |
-| A6 Board alignment | All 16 section bounds are distinct. Native inspection found no specimen-card child outside its intended board or card. | 0 | PASS |
-| A7 Whitespace | All 16 exports visually checked. Extra width for state-set cells and height for phone and sheet examples keep visual comparisons aligned. | 0 | PASS |
-| A8 Visual integrity | No direct board or specimen-card overflow, unresolved visual overlap or lost source artwork in the review. Renders of the app baseline matched byte for byte. | 0 | PASS |
-| A9 State consistency | Button and mood matrices distinguish variants from states. Existing native reusable source states were checked, and two new native selection variants were switched successfully in an isolated test. | 0 | PASS |
-| A10 Editability | 243 native instance layers, 20 native masters, 2 native sets, and editable vectors and text. Button label override and both variant switches verified. | 0 | PASS |
+| Criterion | Inspection and evidence | Found | Corrected | Unresolved | Result |
+| --- | --- | ---: | ---: | ---: | --- |
+| A1 Spacing | 16 board grids and shared specimen cards checked for consistent insets and separation. Source-component spacing is preserved and documented by family. | 0 | 0 | 0 | PASS |
+| A2 Icon centering | 187 native comparisons for centered wells and badges. Geometry was within 1 px for covered icons. | 0 | 0 | 0 | PASS |
+| A3 Button composition | 16 action specimens checked for centering of the combined label and icon. | 0 | 0 | 0 | PASS |
+| A4 Text sizing | 1,342 text layers use height or width-and-height resizing. The first numeric specimen used display metrics. The revised specimen matches the approved calendar date. | 1 | 1 | 0 | PASS |
+| A5 Component consistency | 168 specimens measured against sources, with documented dimensions for resized button examples and viewport references. | 0 | 0 | 0 | PASS |
+| A6 Board alignment | 16 section bounds checked for overlap. Native inspection found no specimen-card child outside its intended board or card. | 0 | 0 | 0 | PASS |
+| A7 Whitespace | 16 exports visually checked. The comparison rows reserve space for state cells, phones, and sheets. | 0 | 0 | 0 | PASS |
+| A8 Visual integrity | 16 boards and 308 app renders checked. The review found no board or specimen-card overflow or lost artwork. The app renders matched byte for byte. | 0 | 0 | 0 | PASS |
+| A9 State consistency | Two variant matrices reviewed. Existing source states were checked and two new native selection instances were switched in an isolated test. | 0 | 0 | 0 | PASS |
+| A10 Editability | 243 native instance layers, 20 native masters, and 2 native sets inspected. Button label override and both variant switches verified. | 0 | 0 | 0 | PASS |
 
 ### Corrected during review
 

@@ -1,77 +1,38 @@
-# Alongio — Design Tokens
+# Alongio design tokens
+
+The [token registry](system/tokens.json) uses the approved FigCraft color names as keys under `palette`. In FigCraft, open **00 — Alongio Design System** → **02 — Color Palette** to see each name, HEX value, swatch, and variable ID. **17 — Token inspector** covers the other token families.
 
 ## Color
 
-| Token    | Value   |
-| -------- | ------- |
-| canvas   | #F8F1E5 |
-| ink      | #29272B |
-| pink     | #E88C9F |
-| indigo   | #A6A3E3 |
-| yellow   | #F3D36B |
-| green    | #A1C5A1 |
-| lavender | #DDD5F3 |
-| muted    | #70686A |
+| Palette name | Value |
+| --- | --- |
+| `cream` | #F8F1E5 |
+| `ink` | #29272B |
+| `pink` | #E88C9F |
+| `indigo` | #A6A3E3 |
+| `yellow` | #F3D36B |
+| `green` | #A1C5A1 |
+| `lavender` | #DDD5F3 |
+| `muted` | #70686A |
+
+Bind approved component colors directly to the named FigCraft variables in **Alongio / Palette**. The deprecated lookup records the old aliases and their exact palette targets. [Color usage and contrast](system/colors.md) · [Palette mapping](system/color-palette-mapping.md)
 
 ## Typography
 
-Display font: Space Grotesk
+Use `font-family.display` (Space Grotesk) and `font-family.body` (DM Sans). `typography.*` defines the full role, including weight, size, line height, and tracking. Approved local styles retain their exact metrics. [Typography roles and native examples](system/typography.md)
 
-Body font: DM Sans
+## Geometry
 
-| Token      | Size | Weight |
-| ---------- | ---: | -----: |
-| display    |   36 |    700 |
-| heading-xl |   30 |    700 |
-| heading-lg |   24 |    700 |
-| heading-md |   20 |    600 |
-| heading-sm |   18 |    600 |
-| body-lg    |   16 |    400 |
-| body-md    |   14 |    400 |
-| body-sm    |   12 |    400 |
-| caption    |   11 |    500 |
+- `spacing.step-*` defines the 4, 8, 12, 16, 20, 24, 32, 40, and 48 logical-pixel spacing steps.
+- `layout.screen-inset` resolves to 20 px, `layout.section-gap` to 24 px, and `layout.component-gap` to 12 px.
+- `radius.sm`, `radius.md`, `radius.lg`, `radius.xl`, and `radius.2xl` resolve to 8, 12, 16, 20, and 24 px. `radius.pill` expresses a fully rounded end. FigCraft clamps it to the geometry.
+- `size.touch.minimum` resolves to 48 px. The approved interaction baseline remains 48 × 48 logical pixels.
+- `border.width.default` is 1 px and `border.width.illustration` is 2 px. Approved vector artwork may use local linework. `shadow.none` defines the flat-surface treatment.
 
-## Spacing
+The reference viewport is 390 × 844. Respect safe areas and use content-driven sizing where the component contract requires it. [Layout roles and responsive examples](system/layout.md)
 
-Base unit: 4 logical pixels.
+## Motion and native coverage
 
-Spacing scale: 4, 8, 12, 16, 20, 24, 32, 40, 48.
+`motion.*` remains in the canonical registry. FigCraft stores prototype timings and easing in the interactions themselves. [Soft Playful Motion](MOTION.md)
 
-Default screen padding: 20.
-
-Default section spacing: 24.
-
-Default component gap: 12.
-
-## Border Radius
-
-| Token | Value |
-| ----- | ----: |
-| sm    |     8 |
-| md    |    12 |
-| lg    |    16 |
-| xl    |    20 |
-| 2xl   |    24 |
-| pill  |   999 |
-
-## Borders
-
-Standard border: 1px.
-
-Illustration outline: 2–3px when applicable.
-
-## Elevation
-
-Prefer flat surfaces.
-
-Avoid elevation unless necessary to communicate interaction or hierarchy.
-
-## Layout
-
-Primary mobile design frame: 390 × 844.
-
-Respect platform safe areas.
-
-Maintain a minimum interactive target of 48 × 48 logical pixels.
-
-Design tokens are provisional until the master home screen is approved. Do not introduce additional tokens without justification.
+Use the [palette audit](system/color-palette-audit.md) for binding and visual evidence. The earlier [token migration report](system/migration-report.md) records the non-color synchronization and historical checks.
