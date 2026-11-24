@@ -4,6 +4,8 @@ import { colors } from "@src/styles/colors";
 import { AuthHeader, Button } from "@src/components/shared";
 import { Image } from "expo-image";
 import { Lock1 } from "iconsax-react-nativejs";
+import { useNavigation } from "@react-navigation/native";
+import { AuthNavigationProp } from "@src/utils/navigation";
 
 const SPACE_DATA = [
   {
@@ -25,9 +27,11 @@ const SPACE_DATA = [
 const SpaceSetup = () => {
   const [currSpace, setCurrSpace] = useState<string | null>(null);
 
+  const nav = useNavigation<AuthNavigationProp>();
+
   return (
     <View style={styles.container}>
-      <AuthHeader />
+      <AuthHeader onBack={() => nav.replace("Greeting")} />
 
       <View style={styles.header}>
         <Text style={styles.title}>Find your space.</Text>
