@@ -1,3 +1,4 @@
+import { RouteProp } from "@react-navigation/native";
 import {
   createNativeStackNavigator,
   NativeStackNavigationProp,
@@ -5,10 +6,25 @@ import {
 
 export type AuthStackParamList = {
   Greeting: undefined;
-  Register: undefined;
   Onboarding: undefined;
+  Register: undefined;
+  VerifyEmail: {
+    email: string;
+  };
+  ProfileSetup: {
+    id: string;
+  };
+  SpaceSetup: {
+    id: string;
+  };
 };
 
 export const AuthStack = createNativeStackNavigator<AuthStackParamList>();
 
 export type AuthNavigationProp = NativeStackNavigationProp<AuthStackParamList>;
+
+export type VerifyEmailRouteProp = RouteProp<AuthStackParamList, "VerifyEmail">;
+export type ProfileSetupRouteProp = RouteProp<
+  AuthStackParamList,
+  "ProfileSetup"
+>;

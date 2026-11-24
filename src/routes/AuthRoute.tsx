@@ -1,4 +1,11 @@
-import { Greeting, Onboarding, Register } from "@src/pages/auth";
+import {
+  Greeting,
+  Onboarding,
+  ProfileSetup,
+  Register,
+  SpaceSetup,
+  VerifyEmail,
+} from "@src/pages/auth";
 import { AuthStack } from "@src/utils/navigation";
 
 const AuthRoute = () => {
@@ -9,8 +16,11 @@ const AuthRoute = () => {
       }}
     >
       <AuthStack.Screen name="Greeting" component={Greeting} />
-      <AuthStack.Screen name="Register" component={Register} />
       <AuthStack.Screen name="Onboarding" component={Onboarding} />
+      <AuthStack.Screen name="Register" component={Register} />
+      <AuthStack.Screen name="VerifyEmail" component={VerifyEmail} />
+      <AuthStack.Screen name="ProfileSetup" component={ProfileSetup} />
+      <AuthStack.Screen name="SpaceSetup" component={SpaceSetup} />
     </AuthStack.Navigator>
   );
 };

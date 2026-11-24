@@ -68,26 +68,32 @@ const Onboarding = () => {
       { duration: 500 },
     );
 
-    slideContentAnim.value = withSequence(
-      withTiming(
-        PAGE_DATA.map((_, index) => {
-          if (prevSlide < activeSlide) {
-            return index === activeSlide - 1
+    if (activeSlide !== prevSlide) {
+      slideContentAnim.value = withSequence(
+        withTiming(
+          PAGE_DATA.map((_, index) => {
+            if (prevSlide < activeSlide) {
+              return index === activeSlide - 1
+                ? 2
+                : index === activeSlide
+                  ? 1
+                  : 0;
+            }
+
+            return index === activeSlide + 1
               ? 2
               : index === activeSlide
                 ? 1
                 : 0;
-          }
-
-          return index === activeSlide + 1 ? 2 : index === activeSlide ? 1 : 0;
-        }),
-        { duration: 500 },
-      ),
-      withTiming(
-        PAGE_DATA.map((_, index) => (index === activeSlide ? 1 : 0)),
-        { duration: 0 },
-      ),
-    );
+          }),
+          { duration: 500 },
+        ),
+        withTiming(
+          PAGE_DATA.map((_, index) => (index === activeSlide ? 1 : 0)),
+          { duration: 0 },
+        ),
+      );
+    }
   }, [activeSlide]);
 
   return (

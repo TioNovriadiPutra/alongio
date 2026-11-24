@@ -1,8 +1,9 @@
 import { NavigationContainer } from "@react-navigation/native";
 import AuthRoute from "@src/routes/AuthRoute";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet } from "react-native";
 import * as SplashScreen from "expo-splash-screen";
 import { useFonts } from "expo-font";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 SplashScreen.setOptions({
   duration: 2000,
@@ -20,11 +21,11 @@ const App = () => {
   if (!fontsLoaded) return null;
 
   return (
-    <View style={styles.container}>
+    <GestureHandlerRootView style={styles.container}>
       <NavigationContainer>
         <AuthRoute />
       </NavigationContainer>
-    </View>
+    </GestureHandlerRootView>
   );
 };
 

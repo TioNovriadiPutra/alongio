@@ -14,6 +14,8 @@ import Animated, {
   SharedValue,
   useAnimatedStyle,
 } from "react-native-reanimated";
+import { useNavigation } from "@react-navigation/native";
+import { AuthNavigationProp } from "@src/utils/navigation";
 
 const HEIGHT = Dimensions.get("window").height;
 
@@ -40,13 +42,9 @@ const OnboardingSlide = ({
   onBack,
   onNext,
 }: Props) => {
-  const vectorAnimatedStyle = useAnimatedStyle(() => {
-    return {
-      opacity: animValues.value[index],
-    };
-  });
+  const nav = useNavigation<AuthNavigationProp>();
 
-  const buttonAnimatedStyle = useAnimatedStyle(() => {
+  const vectorAnimatedStyle = useAnimatedStyle(() => {
     return {
       opacity: animValues.value[index],
     };
@@ -105,7 +103,7 @@ const OnboardingSlide = ({
           />
         </View>
 
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => nav.navigate("Register")}>
           <Text style={styles.skip}>Skip</Text>
         </TouchableOpacity>
       </View>
@@ -117,17 +115,19 @@ const OnboardingSlide = ({
         contentPosition="center"
       />
 
-      <View style={styles.indicatorContainer}>
+      <Animated.View style={[styles.indicatorContainer, vectorAnimatedStyle]}>
         <View style={styles.indicatorLeft}>
-          {Array.from({ length: contentLength }).map((_, index) => (
-            <View key={index.toString()} style={styles.indicator}></View>
+          {Array.from({ length: contentLength }).map((_, i) => (
+            <View key={i.toString()} style={styles.indicator}>
+              {i === index && <View style={styles.indicatorColor} />}
+            </View>
           ))}
         </View>
 
         <Text style={styles.indicatorRight}>
           {index + 1} of {contentLength}
         </Text>
-      </View>
+      </Animated.View>
 
       <Animated.Text style={[styles.tag, tagAnimatedStyle]}>
         {slideData.tag}
@@ -139,7 +139,7 @@ const OnboardingSlide = ({
         <Text style={styles.desc}>{slideData.description}</Text>
       </Animated.View>
 
-      <Animated.View style={buttonAnimatedStyle}>
+      <Animated.View style={vectorAnimatedStyle}>
         <Button
           label={!isLast ? "Continue" : "Create an account"}
           onPress={onNext}
@@ -220,10 +220,15 @@ const styles = StyleSheet.create({
     height: 5,
     borderRadius: 2.5,
     backgroundColor: colors["indigo"],
+    overflow: "hidden",
   },
   indicatorRight: {
     fontFamily: "DMMedium",
     fontSize: 13,
     color: colors["muted"],
+  },
+  indicatorColor: {
+    flex: 1,
+    backgroundColor: colors["ink"],
   },
 });

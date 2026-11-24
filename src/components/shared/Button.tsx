@@ -4,17 +4,20 @@ import { colors } from "@src/styles/colors";
 type Props = {
   mode?: "primary" | "secondary" | "destructive";
   label: string;
+  disabled?: boolean;
   onPress?: () => void;
 };
 
-const Button = ({ mode = "primary", label, onPress }: Props) => {
+const Button = ({ mode = "primary", label, disabled, onPress }: Props) => {
   return (
     <TouchableOpacity
+      disabled={disabled}
       style={[
         styles.container,
         {
-          backgroundColor:
-            mode === "destructive"
+          backgroundColor: disabled
+            ? colors["lavender"]
+            : mode === "destructive"
               ? colors["pink"]
               : mode === "secondary"
                 ? "transparent"
@@ -27,7 +30,13 @@ const Button = ({ mode = "primary", label, onPress }: Props) => {
       <Text
         style={[
           styles.label,
-          { color: mode === "primary" ? colors["cream"] : colors["ink"] },
+          {
+            color: disabled
+              ? colors["muted"]
+              : mode === "primary"
+                ? colors["cream"]
+                : colors["ink"],
+          },
         ]}
       >
         {label}

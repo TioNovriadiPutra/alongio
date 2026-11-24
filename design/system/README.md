@@ -25,9 +25,10 @@ The editable **00 — Alongio Design System** page lives inside the [FigCraft ma
 | [Earlier component binding audit](component-binding-audit.md) | Historical properties and instance inheritance by family |
 | [Earlier migration report](migration-report.md) | Historical T1–T12 validation results |
 | [Quality audit](design-system-audit.md) | Native and visual verification |
+| [Feedback and system states](../feedback/README.md) | Phase 10F variants, coverage, isolated Authentication pilot, and handoff |
 | [Review boards](../screens/design-system/) | Section-by-section PNG exports |
 
-The FigCraft page has 17 sections. The Token inspector follows React Native Implementation Mapping. Existing specimen cards identify their source by FC ID. Use the library to find the component contract, then look up an approved production example in the [screen inventory](../handoff/screen-inventory.md).
+The FigCraft page has 18 sections. The Token inspector follows React Native Implementation Mapping. **18 — Feedback & System States** adds proposed feedback variants for Phase 10F. Existing specimen cards identify their source by FC ID. Use the library to find the component contract, then look up an approved production example in the [screen inventory](../handoff/screen-inventory.md).
 
 The color registry follows the names and values in Alongio’s approved FigCraft palette. The registry uses typed values and aliases for supported non-color tokens. [Design Tokens Format Module](https://www.designtokens.org/TR/2025.10/format/)
 
@@ -52,3 +53,4 @@ The color registry follows the names and values in Alongio’s approved FigCraft
 - [15 — Accessibility & Interaction](../screens/design-system/15-accessibility.png)
 - [16 — React Native Implementation Mapping](../screens/design-system/16-react-native-mapping.png)
 - [17 — Token inspector](../screens/design-system/17-token-inspector.png)
+- [18 — Feedback & System States](../screens/feedback/18-feedback-system-states.png)
