@@ -133,7 +133,7 @@ const Register = () => {
         <View style={styles.linkContainer}>
           <Text style={styles.link}>Already have an account? </Text>
 
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => nav.replace("Login")}>
             <Text style={styles.link}>Log in</Text>
           </TouchableOpacity>
         </View>

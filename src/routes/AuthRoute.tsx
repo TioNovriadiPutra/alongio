@@ -1,5 +1,6 @@
 import {
   Greeting,
+  Login,
   Onboarding,
   ProfileSetup,
   Register,
@@ -21,6 +22,7 @@ const AuthRoute = () => {
       <AuthStack.Screen name="VerifyEmail" component={VerifyEmail} />
       <AuthStack.Screen name="ProfileSetup" component={ProfileSetup} />
       <AuthStack.Screen name="SpaceSetup" component={SpaceSetup} />
+      <AuthStack.Screen name="Login" component={Login} />
     </AuthStack.Navigator>
   );
 };

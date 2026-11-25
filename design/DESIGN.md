@@ -657,3 +657,26 @@ No screen may have:
 - Excessive passive whitespace caused by layout constraints.
 
 Preserve the approved Romantic Playful Geometric Abstract visual identity across all viewport sizes.
+
+## FigCraft Page Organization & Flow Consolidation
+
+Never create a new FigCraft page arbitrarily.
+
+All screens, states, variants, toasts, error states, loading states, empty states, placement fixtures, and flow extensions must be consolidated into the **same existing page that matches their user flow**.
+
+### Mandatory Rules
+
+- Do not create standalone pages for feature pilots, feedback states, toast states, error states, or sub-flows that belong to an existing module or user journey.
+- Place all related screens and states inside their owning flow page using clearly named **Sections** positioned in an unused canvas area, without moving, overlapping, or modifying previously approved frames:
+  - Authentication, onboarding, OTP, password recovery, and auth feedback/toasts → **01 — Authentication & Onboarding**
+  - Home launcher states → **Home**
+  - Tasks, calendar, routines, Together Growth, and planner feedback/toasts → **03 — Tiny Planner**
+  - Diary entries, mood, photos, sharing, and diary feedback/toasts → **04 — Heart Diary**
+  - Kitchen overview, recipe discovery, Kitchen Magic, saved recipes, meal planning, and kitchen feedback/toasts → **05 — Little Kitchen**
+  - Partner connection, invitations, and couple management states → **06 — Couple Space**
+  - Profile, mode settings, account security, and settings feedback/toasts → **07 — Profile & Settings**
+  - Notification inbox, history, permissions, and update states → **08 — Little Updates**
+  - Shared tokens and reusable component masters → **00 — Alongio Design System** / **Components**
+  - Isolated motion studies → **01 — Alongio Motion System** (only when explicitly scoped to motion prototyping)
+- Maintain clear section separation, consistent frame spacing, preserved prototype connections, and native layer locks within the target flow page.
+- Creating a brand-new FigCraft page is prohibited unless explicitly authorized by the project owner for a genuinely new top-level domain outside the established page groups.

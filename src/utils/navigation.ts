@@ -17,6 +17,7 @@ export type AuthStackParamList = {
   SpaceSetup: {
     id: string;
   };
+  Login: undefined;
 };
 
 export const AuthStack = createNativeStackNavigator<AuthStackParamList>();
