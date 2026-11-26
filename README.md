@@ -408,12 +408,11 @@ Designing and building warm, human-centered mobile experiences end-to-end.
   <a href="https://github.com/TioNovriadiPutra">
     <img src="https://img.shields.io/badge/GitHub-TioNovriadiPutra-29272B?style=for-the-badge&logo=github&logoColor=F8F1E5" alt="GitHub" />
   </a>
-  <!-- Replace the # links below with your LinkedIn, X/Twitter, or Portfolio URLs -->
-  <a href="#">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-29272B?style=for-the-badge&logo=linkedin&logoColor=A6A3E3" alt="LinkedIn" />
+  <a href="https://www.linkedin.com/in/tio-novriadi-putra-7293071b0">
+    <img src="https://img.shields.io/badge/LinkedIn-Tio_Novriadi_Putra-29272B?style=for-the-badge&logo=linkedin&logoColor=A6A3E3" alt="LinkedIn" />
   </a>
-  <a href="#">
-    <img src="https://img.shields.io/badge/X_/_Twitter-Follow_Updates-29272B?style=for-the-badge&logo=x&logoColor=F3D36B" alt="X / Twitter" />
+  <a href="https://www.instagram.com/tio_novriadi">
+    <img src="https://img.shields.io/badge/Instagram-@tio__novriadi-29272B?style=for-the-badge&logo=instagram&logoColor=E88C9F" alt="Instagram" />
   </a>
 </p>
 
