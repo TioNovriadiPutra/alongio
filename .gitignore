@@ -39,3 +39,17 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# secrets & firebase config
+.env
+.env.*
+!.env.example
+google-services.json
+GoogleService-Info.plist
+# social showcase & hidden FigCraft backups
+design/showcase/
+design/.*.figcraft
+# local AI agent config
+.agents/
+AGENTS.md
+skills-lock.json

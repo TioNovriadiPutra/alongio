@@ -26,6 +26,7 @@
   <a href="#-design-system">Design System</a> •
   <a href="#-motion--custom-lottie-mascots">Motion &amp; Lottie</a> •
   <a href="#-tech-stack--architecture">Architecture</a> •
+  <a href="#-contributing--branching-workflow">Contributing</a> •
   <a href="#-roadmap">Roadmap</a>
 </p>
 
@@ -346,6 +347,42 @@ npx expo start
 ```
 
 > **Note:** Native Firebase modules (`@react-native-firebase/*`) and `lottie-react-native` require an Expo Development Build (`npx expo run:android` or `npx expo run:ios`) with your own `google-services.json` / `GoogleService-Info.plist`.
+
+---
+
+## 🤝 Contributing & Branching Workflow
+
+Contributions are welcome! Direct pushes to `main` and `dev` are restricted—all changes must follow our **clean feature + `-dev` integration branch** workflow so feature branches stay isolated from unreleased `dev` commits.
+
+```text
+main ──▶ feature/new ──▶ feature/new-dev (+ pull origin dev) ──▶ PR into dev
+```
+
+### Step-by-Step Contribution Flow
+
+1. **Create a feature branch from `main`**
+   Always branch off the latest `main` (e.g. `feature/<name>` or `fix/<name>`):
+   ```bash
+   git checkout main
+   git pull origin main
+   git checkout -b feature/new
+   ```
+2. **Build & commit on your feature branch**
+   Keep all your commits cleanly on `feature/new` without pulling `dev` directly into it.
+3. **Create a `-dev` integration branch from your feature branch**
+   When you're ready to integrate into `dev`, branch off your feature branch and append `-dev` to its name (`feature/new` → `feature/new-dev`):
+   ```bash
+   git checkout -b feature/new-dev
+   ```
+4. **Pull latest `dev` into the `-dev` branch & resolve conflicts**
+   ```bash
+   git pull origin dev
+   # resolve any merge conflicts locally, then commit if needed
+   git push -u origin feature/new-dev
+   ```
+5. **Open a Pull Request into `dev`**
+   - Target branch: **`dev`** (from `feature/new-dev`).
+   - Keep `feature/new` clean and untouched so it can be cleanly promoted to `main` once verified.
 
 ---
 
