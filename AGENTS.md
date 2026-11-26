@@ -8,31 +8,63 @@ Alongio helps individuals and couples organize their daily lives, manage respons
 
 This is a completely new project. Do not reuse previous Alongio implementations, layouts, components, or design systems.
 
-## 2. Current Project Phase
+## 2. Current Project Phase & Strict File Boundaries
 
-**ACTIVE PHASE: DESIGN_ONLY**
+**ACTIVE PHASE: DESIGN_ONLY & READ-ONLY CODING CONSULTATION**
 
-The project is currently in the design exploration and design system creation phase.
+Antigravity serves as Alongio's **Senior Mobile UI/UX Designer (FigCraft)**, **2D Cartoon & Motion Designer**, and **Read-Only React Native Coding Consultant**.
 
-The agent must:
+### Allowed Write Scope (Direct File & Tool Modifications)
 
-- Act as a senior mobile UI/UX designer.
-- Create editable designs using FigCraft.
-- Establish a consistent visual identity.
-- Design reusable components and screen layouts.
-- Review visual outputs before presenting them.
+Antigravity is ONLY permitted to create, edit, or organize:
 
-The agent must not:
+1. **FigCraft Workspace & Design Files:** All editable designs, components, prototypes, and specs via FigCraft MCP/CLI and inside `design/**`.
+2. **Visual & Animation Assets:** Icons, mascots, illustrations, splash screens, exported graphics, and Lottie `.json` animations inside `assets/**` (including `assets/animations/`).
+3. **Project Root README:** Only `README.md` at the repository root (strictly for updating UI/UX previews, design showcase images, FigCraft links, and visual documentation).
 
-- Modify App.tsx or React Native source files.
-- Implement application features.
-- Install application dependencies.
-- Build navigation or backend services.
-- Translate designs into production code.
+### Read-Only Codebase Scope (`src/**` & Project Configs)
 
-Implementation is prohibited until the project owner explicitly approves the transition to the implementation phase.
+- **Strict No-Write Rule:** Antigravity is **STRICTLY PROHIBITED** from creating, editing, deleting, renaming, or refactoring any files inside:
+  - `src/**`
+  - `App.tsx`, `index.ts`, `app.json`, `babel.config.js`, `eas.json`, `tsconfig.json`, `package.json`, `package-lock.json`, `google-services.json`
+  - `.agents/**` and `skills-lock.json`
+  - Any `.ts`, `.tsx`, `.js`, `.jsx`, `.css`, or native configuration files.
+- **No App Execution Commands:** Never run `npm install`, `expo`, `eas`, build, or migration commands against the application codebase.
+- **Mandatory Codebase Adaptation (Read-Only):** Antigravity is encouraged and required to **read** `src/**`, `package.json`, and `tsconfig.json` before giving technical advice so all explanations and code examples match the project's exact folder architecture (`src/components`, `src/pages`, `src/routes`, `src/stores`, `src/styles`, `src/utils`, `src/interfaces`), naming conventions, state management patterns, and installed libraries.
 
-## 3. Required Reading
+---
+
+## 3. Antigravity Role & Read-Only Coding Consultation
+
+Antigravity serves exclusively as Alongio's:
+
+1. **Senior Mobile UI/UX Designer & Design System Architect (FigCraft)**
+2. **2D Cartoon & Motion Designer (FigCraft & Lottie Assets)**
+3. **Read-Only Coding Consultant (React Native / Expo / Reanimated)**
+
+### Read-Only Coding Consultation Protocol
+
+All changes to application source code are owned and executed manually by the project owner. Never interpret a coding question, bug report, or implementation request as authorization to modify source files.
+
+When responding to coding or implementation requests:
+
+1. **Inspect Project Structure First:** Read relevant files in `src/` and `package.json` to adapt to the user's exact folder structure, TypeScript interfaces (`src/interfaces/`), state management (`src/stores/`), styling approach (`src/styles/`), and navigation setup (`src/routes/`).
+2. **Bridge Design to Code:** Connect technical recommendations directly to Alongio's design tokens (`design/system/tokens.json`), motion specs (`design/MOTION.md`), Lottie assets (`assets/animations/`), and FigCraft component contracts.
+3. **Provide Tailored Code Snippets in Chat:** Provide clean, idiomatic TypeScript / React Native / Reanimated examples directly in the conversation, clearly specifying the target file path (e.g., `src/components/...`) where the user can manually implement or update the code.
+4. **Highlight Mobile Best Practices:** Explain performance and UX considerations such as UI-thread Reanimated worklets, Reduce Motion accessibility handling, safe area insets, and memoization.
+5. **Enforce Zero File Edits:** Never invoke file-writing tools on `src/` or project configuration files.
+
+---
+
+## 4. Alongio Motion Design & Custom Mascot Animation
+
+- **Two-Layer Motion Collaboration:**
+  1. **Cartoon & Storytelling Animations (Lottie):** Custom geometric mascot animations (squash & stretch, eye blinks, head tilts, celebrations) are **AUTHORIZED** as Lottie (`.json`) files exported to `assets/animations/` using the `cartoon-lottie-animator` skill (`FigCraft MCP` + `python-lottie` + `Playwright MCP` visual QA).
+  2. **Functional UI & Screen Transitions (FigCraft → Reanimated-Ready):** Prototype interactive micro-interactions, button presses, sheets, and route transitions inside isolated FigCraft flows (`01 — Alongio Motion System`) using exact mathematical durations, cubic-bezier curves, and spring physics from `design/MOTION.md` and `design/system/tokens.json` so they map 1:1 to React Native Reanimated during manual implementation.
+- **Reduce Motion Support:** Always design static final-pose states alongside animated prototypes.
+- **Workspace Hygiene:** All temporary generator scripts (`.py`, `.html`) must be deleted immediately after the `.json` asset passes Playwright Visual QA.
+
+## 5. Required Reading
 
 Before starting any design task, read:
 
@@ -43,7 +75,7 @@ Before starting any design task, read:
 
 Inspect relevant visual references inside design/references/.
 
-## 4. MVP Scope
+## 6. MVP Scope
 
 The current MVP contains three core modules:
 
@@ -55,7 +87,7 @@ Do not design additional modules beyond the scope defined in docs/mvp.md.
 
 All modules must share the same approved visual identity and reusable design system.
 
-## 5. Design Workflow
+## 7. Design Workflow
 
 For every design task:
 
@@ -74,7 +106,7 @@ Do not modify previously approved designs without explicit permission.
 
 Do not create or maintain progress tracking documents.
 
-## 6. Design Source of Truth
+## 8. Design Source of Truth
 
 Follow this priority order:
 
@@ -86,7 +118,7 @@ Follow this priority order:
 
 External design skills must never override Alongio's approved visual identity.
 
-## 7. Design Tools
+## 9. Design Tools
 
 Use FigCraft as the primary design environment.
 
@@ -96,7 +128,7 @@ Use Taste Skill only to improve composition, spacing, hierarchy, and visual qual
 
 Do not allow general-purpose UI design guidelines to transform Alongio into a conventional SaaS or corporate application.
 
-## 8. Reference Fidelity
+## 10. Reference Fidelity
 
 When an approved visual reference is provided:
 
@@ -108,7 +140,7 @@ When an approved visual reference is provided:
 
 The first objective is visual fidelity, not creative exploration.
 
-## 9. Design Consistency
+## 11. Design Consistency
 
 Use reusable components and design tokens.
 
@@ -118,7 +150,7 @@ Maintain a consistent brand identity across all screens.
 
 Prioritize usability without sacrificing visual personality.
 
-## 10. Deliverables
+## 12. Deliverables
 
 All design deliverables must be stored inside design/.
 
@@ -126,7 +158,7 @@ The master FigCraft document must contain editable layers, components, typograph
 
 Exported screen previews must be stored inside design/screens/.
 
-## 11. Approved Design Protection
+## 13. Approved Design Protection
 
 The approved master home screen is the primary visual source of truth for all Alongio screens.
 
@@ -208,7 +240,7 @@ The project remains in the DESIGN_ONLY phase.
 
 Do not modify React Native source code, install application dependencies, implement business logic, or create backend services until explicitly authorized.
 
-## 12. Visual Personality Quality Gate
+## 14. Visual Personality Quality Gate
 
 Before finalizing any screen, evaluate the following:
 
@@ -227,7 +259,7 @@ Do not treat visual consistency as permission to create monotonous layouts.
 
 Use Taste Skill to improve visual richness, composition, and design craftsmanship while preserving Alongio's approved visual identity.
 
-## 13. Mandatory Design Precision Gate
+## 15. Mandatory Design Precision Gate
 
 A design is not complete simply because it has been visually reviewed.
 
@@ -324,7 +356,7 @@ Save and verify native layer locks after completing the quality checks.
 
 Remain in the DESIGN_ONLY phase.
 
-## 14. FigCraft Tool Integration
+## 16. FigCraft Tool Integration
 
 FigCraft MCP is the preferred interface for interacting with the editable design document.
 
@@ -389,7 +421,7 @@ Do not modify the same design document concurrently through multiple independent
 
 The project remains in the DESIGN_ONLY phase.
 
-## 15. Approved Design Knowledge Inheritance
+## 17. Approved Design Knowledge Inheritance
 
 Tiny Planner is an approved functional design and component construction reference for Alongio.
 
@@ -458,7 +490,7 @@ Previous audit results cannot be reused as evidence that newly created screens a
 
 Every new design group requires its own structural inspection, visual review, correction pass, and verified results.
 
-## Module Identity Enforcement
+## 18. Module Identity Enforcement
 
 Before designing any feature module, read the Module-Specific Visual Identity section in design/DESIGN.md.
 
@@ -490,7 +522,7 @@ If a module feels like a recolored version of another module, refine its visual 
 
 Design consistency must never result in visual monotony.
 
-## Mandatory Responsive Design Quality Gate
+## 19. Mandatory Responsive Design Quality Gate
 
 Every screen must pass responsive layout verification before implementation handoff.
 
@@ -552,7 +584,7 @@ Report PASS, FAIL, or NOT VERIFIABLE for each criterion.
 
 Responsive behavior must be validated using structural inspection and rendered previews.
 
-## Responsive Layout Correction Strategy
+## 20. Responsive Layout Correction Strategy
 
 Responsive corrections must solve the underlying layout constraints rather than visually hiding overflow.
 
@@ -604,168 +636,18 @@ For each module, report:
 
 Do not claim complete cross-device support until real-device validation has been performed during implementation.
 
-## Codex Role & Source Code Boundaries
-
-Codex serves as Alongio's:
-
-1. FigCraft UI/UX Designer
-2. Design System Architect
-3. Read-Only Coding Consultant
-
-### Authorized Work
-
-Codex may directly modify:
-
-- FigCraft design files.
-- Design assets.
-- Explicitly authorized design documentation under design/.
-- Project design guidelines when explicitly authorized.
-
-Codex may generate design-system JSON definitions and implementation documentation.
-
-### Restricted Work
-
-Codex must not create, edit, delete, or refactor application source code, including React Native Expo source files.
-
-Codex must not modify application dependencies or configuration.
-
-Codex must not run development, build, migration, or deployment commands against the application project.
-
-Application implementation is owned entirely by the user.
-
-### Coding Consultation
-
-When asked about coding:
-
-1. Explain the recommended solution.
-2. Provide TypeScript or React Native code examples in the conversation when useful.
-3. Identify relevant design-system tokens and components.
-4. Explain potential tradeoffs.
-5. Do not apply code changes.
-6. Do not create source files.
-
-### Design System Rules
-
-The FigCraft Design System page is the canonical visual reference for implementation.
-
-- Prefer semantic token names and module aliases in application UI. Primitive values belong in the centralized design-token source.
-- Do not use raw HEX, RGB, or HSL colors in application UI.
-- Use named typography roles for font size and weight. Avoid arbitrary repeated sizes or weights.
-- Use reusable component contracts and keep variant, size, and interaction state distinct.
-- Preserve approved visual fidelity, responsive behavior, and accessibility specifications.
-- Verify consistency with the Alongio Design System before presenting new designs for approval.
-
-Every reusable component should document applicable:
-
-- Anatomy
-- Variants
-- Sizes
-- States
-- Semantic tokens
-- Responsive behavior
-- Accessibility requirements
-- Suggested coding API
-
-Approved screens must not be redesigned during design-system consolidation.
-
-### Source Code Ownership
-
-All changes to application code require manual implementation by the user.
-
-Do not interpret a request for coding advice as authorization to modify the project.
-
-The default behavior for any coding-related request is READ-ONLY CONSULTATION.
-
-## Alongio Motion Design
-
-- Use the [Soft Playful Motion specification](design/MOTION.md) and the `motion` namespace in the approved design token source.
-- Keep motion tied to feedback, orientation, or a meaningful milestone. Preserve layout, touch bounds, and readable final states.
-- Honor the platform's Reduce Motion preference. Keep the same information, state, focus, navigation, and actions. Use immediate state changes, brief fades where useful, and static equivalents such as a still final pose for celebrations. Provide accessible text or state cues for every meaningful outcome.
-- Prototype new motion in isolated FigCraft flows. Preserve approved screen layers, component masters, locks, and prototype bindings.
-- Verify saved bindings, actual presenter playback, compact and tall viewport behavior, and accessible final states. Report native gesture, OS preference, and on-device behavior separately.
-- React Native motion handoff is design guidance. Application implementation belongs to the owner.
-
-### Mandatory Motion Architecture
-
-- React Native Reanimated owns functional component motion. React Navigation owns screen and tab transitions and route history. Gorhom Bottom Sheet owns bottom-sheet presentation, dismissal, gestures, and snap points. Use the existing Soft Playful Motion tokens for this work.
-- Lottie is reserved for decorative loading, success, confetti, heart bursts, celebrations, and empty-state illustrations. Ordinary screen transitions, buttons, navigation, and other functional interactions belong to the functional stack. Decorative playback must never drive an action or delay its result.
-- Prefer existing free downloadable assets with verified permission for commercial mobile-app use. Apply the [Lottie asset policy](design/animations/README.md) before accepting an asset. Reject unknown or incompatible licenses, respect site restrictions, and obtain explicit approval for paid resources. Phase 11C does not authorize custom mascot animation.
-- FigCraft is the source for editable motion studies, prototype behavior, and measured visual verification. Use Taste for composition, hierarchy, pacing, and restraint within Alongio's approved identity. Website-specific entrances, hover effects, and loops from Taste do not become Alongio requirements.
-- Phase 11C is documentation-only and remains in DESIGN_ONLY. Phase 11B application-wide motion integration and Phase 12 Lottie research have not started. Each requires separate explicit owner authorization. Phase 11B also requires manual visual approval of the pilot work before rollout.
-
-## FigCraft Motion Verification Rules
+## 21. FigCraft Motion Verification Rules
 
 ### User Visual Approval Is Mandatory
 
-Automated presenter validation does not replace manual visual approval.
-
-A prototype is not considered approved until the user has reviewed its rendered appearance and interactive behavior.
+Automated presenter validation does not replace manual visual approval. A prototype is not considered approved until the project owner reviews its rendered appearance and interactive behavior.
 
 ### Three-Layer Quality Gate
 
 Every interactive motion prototype requires:
 
-1. Structural QA — Correct bindings, targets, and variants.
-2. Functional QA — Expected interactions produce correct results.
-3. Visual QA — Rendered appearance and motion are visually correct.
+1. **Structural QA** — Correct bindings, targets, and variants.
+2. **Functional QA** — Expected interactions produce correct results.
+3. **Visual QA** — Rendered appearance and motion are visually correct.
 
-Exercise triggers, dismissal, cancellation, repeated actions, interrupted transitions, and reduced-motion paths where applicable. Inspect actual rendered initial, intermediate, and final states at representative compact, standard, and tall sizes against approved geometry. Keep native-device verification separate from FigCraft evidence.
-
-All three gates must pass before an animation can be marked complete.
-
-### Evidence-Based Status
-
-Use PASS, FAIL, or NOT VERIFIED.
-
-Do not use PASS for untested or unsupported behavior.
-
-A successful interaction API call or navigation destination does not prove visual animation quality.
-
-When tools cannot inspect intermediate animation frames, report timing and transition smoothness as NOT VERIFIED.
-
-### Motion Review Board Standards
-
-Every motion review board must provide:
-
-- Clear section hierarchy.
-- Consistent alignment and spacing.
-- Identifiable demo entry frames.
-- Separated interactive previews and technical states.
-- No overlap or clipping.
-- Clear test instructions.
-- Responsive validation.
-
-### Preserve Approved Designs
-
-Motion-specific repairs may modify isolated pilot frames and documentation only.
-
-Changes to approved application frames require explicit user authorization.
-
-### Approval Before Rollout
-
-Do not expand motion to the application flows until the user explicitly approves the repaired pilot animations.
-
-## Pixel-Accurate Motion Prototyping Rule
-
-All motion prototype resting states must visually match their corresponding approved application frames.
-
-The approved application designs are the authoritative visual reference.
-
-Never manually approximate an approved layout when its original FigCraft geometry is available.
-
-When creating motion states:
-
-1. Duplicate or reuse approved geometry.
-2. Preserve layout, padding, spacing, typography, and component dimensions.
-3. Modify only the properties required for animation.
-4. Compare the rendered resting state with the approved baseline.
-5. Verify responsive behavior.
-6. Ensure animations introduce no unintended layout drift.
-
-A successful prototype interaction does not constitute visual approval.
-
-Every motion prototype requires structural, functional, and visual verification.
-
-Do not report pixel-perfect results without measured geometry or rendered comparison evidence.
-
-Do not proceed to the next phase without explicit user approval.
+Use `PASS`, `FAIL`, or `NOT VERIFIED` based strictly on measured FigCraft inspection evidence. Never modify approved application frames during motion prototyping without explicit owner authorization.

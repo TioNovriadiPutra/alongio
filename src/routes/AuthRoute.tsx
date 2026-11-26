@@ -1,4 +1,8 @@
 import {
+  ChangePassword,
+  CheckInbox,
+  EmailVerified,
+  ForgotPassword,
   Greeting,
   Login,
   Onboarding,
@@ -23,6 +27,10 @@ const AuthRoute = () => {
       <AuthStack.Screen name="ProfileSetup" component={ProfileSetup} />
       <AuthStack.Screen name="SpaceSetup" component={SpaceSetup} />
       <AuthStack.Screen name="Login" component={Login} />
+      <AuthStack.Screen name="EmailVerified" component={EmailVerified} />
+      <AuthStack.Screen name="ForgotPassword" component={ForgotPassword} />
+      <AuthStack.Screen name="CheckInbox" component={CheckInbox} />
+      <AuthStack.Screen name="ChangePassword" component={ChangePassword} />
     </AuthStack.Navigator>
   );
 };

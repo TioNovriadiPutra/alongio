@@ -1,7 +1,7 @@
 import { colors } from "@src/styles/colors";
 import { StyleSheet, Text, View } from "react-native";
 import { Image } from "expo-image";
-import { Button } from "@src/components/shared";
+import { Button, MascotAnimation } from "@src/components/shared";
 import { useNavigation } from "@react-navigation/native";
 import { AuthNavigationProp } from "@src/utils/navigation";
 
@@ -15,12 +15,16 @@ const Greeting = () => {
         style={styles.logo}
       />
 
-      <Image
-        source={require("@src/assets/images/greetingIllustration.webp")}
-        style={styles.illustration}
-        contentFit="contain"
-        contentPosition="center"
-      />
+      <View style={styles.illustration}>
+        <MascotAnimation
+          source={require("@src/assets/animations/auth-welcome-mascots.json")}
+          fallbackImage={require("@src/assets/images/greetingIllustration.webp")}
+          aspectRatio={350 / 336}
+          borderRadius={24}
+          tapToReplay
+          style={StyleSheet.absoluteFill}
+        />
+      </View>
 
       <View style={styles.descContainer}>
         <Text style={styles.quotes}>Little things.{"\n"}Better together.</Text>
@@ -37,7 +41,11 @@ const Greeting = () => {
           onPress={() => nav.navigate("Onboarding")}
         />
 
-        <Button label="Log in" mode="secondary" />
+        <Button
+          label="Log in"
+          mode="secondary"
+          onPress={() => nav.navigate("Login")}
+        />
       </View>
     </View>
   );
@@ -60,6 +68,8 @@ const styles = StyleSheet.create({
   },
   illustration: {
     flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
   },
   descContainer: {
     paddingTop: 30,

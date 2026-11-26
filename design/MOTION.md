@@ -72,4 +72,4 @@ Specify the trigger, animation owner, referenced tokens, final state, interrupti
 
 ## Review
 
-See the [motion library and named flows](motion/README.md), [transition specifications](motion/transitions.md), [component feedback](motion/components.md), [mascot storyboard](motion/mascots.md), and [manual implementation handoff](motion/react-native-handoff.md).
+See the [motion library and named flows](motion/README.md), [transition specifications](motion/transitions.md), [component feedback](motion/components.md), and [mascot storyboard](motion/mascots.md).

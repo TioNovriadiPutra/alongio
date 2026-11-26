@@ -64,7 +64,10 @@ const Login = () => {
           )}
         />
 
-        <TouchableOpacity style={styles.forgotButton}>
+        <TouchableOpacity
+          style={styles.forgotButton}
+          onPress={() => nav.navigate("ForgotPassword")}
+        >
           <Text style={styles.forgotLabel}>Forgot password?</Text>
         </TouchableOpacity>
       </View>

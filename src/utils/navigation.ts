@@ -18,6 +18,16 @@ export type AuthStackParamList = {
     id: string;
   };
   Login: undefined;
+  EmailVerified: {
+    id: string;
+  };
+  ForgotPassword: undefined;
+  CheckInbox: {
+    email: string;
+  };
+  ChangePassword: {
+    token: string;
+  };
 };
 
 export const AuthStack = createNativeStackNavigator<AuthStackParamList>();
@@ -28,4 +38,13 @@ export type VerifyEmailRouteProp = RouteProp<AuthStackParamList, "VerifyEmail">;
 export type ProfileSetupRouteProp = RouteProp<
   AuthStackParamList,
   "ProfileSetup"
+>;
+export type EmailVerifiedRouteProp = RouteProp<
+  AuthStackParamList,
+  "EmailVerified"
+>;
+export type CheckInboxRouteProp = RouteProp<AuthStackParamList, "CheckInbox">;
+export type ChangePasswordRouteProp = RouteProp<
+  AuthStackParamList,
+  "ChangePassword"
 >;

@@ -3,13 +3,14 @@ import BackButton from "./BackButton";
 import { Image } from "expo-image";
 
 type Props = {
+  withBack?: boolean;
   onBack?: () => void;
 };
 
-const AuthHeader = ({ onBack }: Props) => {
+const AuthHeader = ({ withBack = true, onBack }: Props) => {
   return (
     <View style={styles.header}>
-      <BackButton onPress={onBack} />
+      {withBack && <BackButton onPress={onBack} />}
 
       <Image
         source={require("@src/assets/images/logoFull.webp")}

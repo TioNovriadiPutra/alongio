@@ -5,3 +5,7 @@ export { default as VerifyEmail } from "./VerifyEmail";
 export { default as ProfileSetup } from "./ProfileSetup";
 export { default as SpaceSetup } from "./SpaceSetup";
 export { default as Login } from "./Login";
+export { default as EmailVerified } from "./EmailVerified";
+export { default as ForgotPassword } from "./ForgotPassword";
+export { default as CheckInbox } from "./CheckInbox";
+export { default as ChangePassword } from "./ChangePassword";

@@ -59,7 +59,7 @@ const VerifyEmail = () => {
         <Button
           label="Verify email"
           onPress={handleSubmit(() => {
-            nav.replace("ProfileSetup", {
+            nav.replace("EmailVerified", {
               id: "tio",
             });
           })}

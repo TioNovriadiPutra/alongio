@@ -18,6 +18,7 @@ const PAGE_DATA: OnboardingSlideType[] = [
     description:
       "Make time for what matters. Keep your tasks, reminders, and daily plans together.",
     vector: require("@src/assets/images/onboarding1.webp"),
+    animation: require("@src/assets/animations/auth-onboarding-planner.json"),
   },
   {
     tag: "HEART DIARY",
@@ -25,6 +26,7 @@ const PAGE_DATA: OnboardingSlideType[] = [
     description:
       "Save moods and memories in your private diary, with the option to share an entry.",
     vector: require("@src/assets/images/onboarding2.webp"),
+    animation: require("@src/assets/animations/auth-onboarding-diary.json"),
   },
   {
     tag: "LITTLE KITCHEN",
@@ -32,6 +34,7 @@ const PAGE_DATA: OnboardingSlideType[] = [
     description:
       "Find recipes for the ingredients you have and plan meals you’ll look forward to.",
     vector: require("@src/assets/images/onboarding3.webp"),
+    animation: require("@src/assets/animations/auth-onboarding-kitchen.json"),
   },
 ];
 
@@ -109,6 +112,7 @@ const Onboarding = () => {
               animValues={slideAnim}
               contentAnimValues={slideContentAnim}
               contentLength={PAGE_DATA.length}
+              isActive={index === activeSlide}
               onBack={onBack}
               onNext={onNext}
             />

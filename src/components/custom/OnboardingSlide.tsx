@@ -5,7 +5,7 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import { BackButton, Button } from "../shared";
+import { BackButton, Button, MascotAnimation } from "../shared";
 import { Image } from "expo-image";
 import { colors } from "@src/styles/colors";
 import { OnboardingSlideType } from "@src/interfaces/componentInterface";
@@ -28,6 +28,7 @@ type Props = {
   animValues: SharedValue<number[]>;
   contentAnimValues: SharedValue<number[]>;
   contentLength: number;
+  isActive: boolean;
   onBack?: () => void;
   onNext?: () => void;
 };
@@ -39,6 +40,7 @@ const OnboardingSlide = ({
   animValues,
   contentAnimValues,
   contentLength,
+  isActive,
   onBack,
   onNext,
 }: Props) => {
@@ -108,12 +110,17 @@ const OnboardingSlide = ({
         </TouchableOpacity>
       </View>
 
-      <AnimatedImage
-        source={slideData.vector}
-        style={[styles.vector, vectorAnimatedStyle]}
-        contentFit="contain"
-        contentPosition="center"
-      />
+      <Animated.View style={[styles.vector, vectorAnimatedStyle]}>
+        <MascotAnimation
+          source={slideData.animation}
+          fallbackImage={slideData.vector}
+          aspectRatio={350 / 322}
+          borderRadius={24}
+          tapToReplay
+          isActive={isActive}
+          style={StyleSheet.absoluteFill}
+        />
+      </Animated.View>
 
       <Animated.View style={[styles.indicatorContainer, vectorAnimatedStyle]}>
         <View style={styles.indicatorLeft}>
@@ -180,6 +187,8 @@ const styles = StyleSheet.create({
   },
   vector: {
     flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
   },
   tag: {
     fontFamily: "DMBold",

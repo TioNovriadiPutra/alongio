@@ -498,7 +498,9 @@ Components containing variable-length text should use consistent minimum heights
 
 Spacing must communicate hierarchy, grouping, and visual rhythm.
 
-- Avoid unnecessary gaps between
+- Avoid unnecessary gaps between related controls, labels, and content blocks.
+- Distribute vertical space intentionally while preserving safe areas and bottom-anchored actions.
+- Eliminate passive empty containers that push primary actions out of reach on compact screens.
 
 ## Supporting Module Visual Identity
 
@@ -530,18 +532,6 @@ Settings interfaces should be visually restrained but must retain Alongio's reco
 - Emotional focus: keeping users informed without overwhelming them.
 
 All supporting modules must inherit the approved global design system, component construction standards, and Mandatory Design Precision Gate.
-
-## Responsive & Adaptive Mobile Design
-
-Alongio must support a wide range of modern Android and iPhone screen sizes.
-
-The design system must use responsive and adaptive layout principles rather than relying on fixed coordinates optimized for a single device.
-
-### Core Principles
-
-- Design mobile-first.
-- Preserve visual hierarchy across different screen sizes.
-- Use native FigCraft Auto
 
 ## Responsive & Adaptive Mobile Design
 
